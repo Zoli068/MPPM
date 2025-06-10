@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF	
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:cim="http://iec.ch/TC57/2010/CIM-schema-cim15#"
+	xmlns:ftn="http://www.ftnydro.com/CIM15/2010/extension#">
+	
+	<!--Irregular Time Points-->
+	
+	<cim:IrregularTimePoint rdf:ID="ITP_638851985134931970">
+		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851965633079052"/>
+		<cim:IrregularTimePoint.time>2025-06-10T15:45:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.value1>75.3</cim:IrregularTimePoint.value1> 
+		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1545</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ITP_638851985134931970</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>IrregularTimePoint at 2025-06-10 15:45:00 UTC</cim:IdentifiedObject.name>
+	</cim:IrregularTimePoint>
+
+	<cim:IrregularTimePoint rdf:ID="ITP_638851985951595551">
+		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851965746514505"/>
+		<cim:IrregularTimePoint.time>2025-06-11T15:20:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.value1>98.6</cim:IrregularTimePoint.value1> 
+		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1520</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ITP_638851985951595551</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>IrregularTimePoint at 2025-06-11 15:20:00 UTC</cim:IdentifiedObject.name>
+	</cim:IrregularTimePoint>
+
+	<cim:IrregularTimePoint rdf:ID="ITP_638851986864244899">
+		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851970464541529"/>
+		<cim:IrregularTimePoint.time>2025-06-16T12:15:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.value1>112.4</cim:IrregularTimePoint.value1> 
+		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1215</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>ITP_638851986864244899</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>IrregularTimePoint at 2025-06-16 12:15:00 UTC</cim:IdentifiedObject.name>
+	</cim:IrregularTimePoint>
+
+	
+	<!--Regular Time Points-->
+	
+	<cim:RegularTimePoint rdf:ID="RTP_638851981595714726">
+		<cim:RegularTimePoint.IntervalSchedule rdf:resource="#RIS_638851977408172342"/>
+		<cim:RegularTimePoint.sequenceNumber>5</cim:RegularTimePoint.sequenceNumber>
+		<cim:RegularTimePoint.value1>3500</cim:RegularTimePoint.value1>
+		<cim:RegularTimePoint.value2>0</cim:RegularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>TimepointAt04h</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RTP_638851981595714726</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RegularTimePoint at 2025-06-10T04:00:00Z</cim:IdentifiedObject.name>
+	</cim:RegularTimePoint>
+	
+	<cim:RegularTimePoint rdf:ID="RTP_638851982754066461">
+		<cim:RegularTimePoint.IntervalSchedule rdf:resource="#RIS_638851979162302139"/>
+		<cim:RegularTimePoint.sequenceNumber>18</cim:RegularTimePoint.sequenceNumber>
+		<cim:RegularTimePoint.value1>4200</cim:RegularTimePoint.value1> <!-- e.g., 4200 W -->
+		<cim:RegularTimePoint.value2>0</cim:RegularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>TimePointAt17h</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RTP_638851982754066461</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RegularTimePoint2 at 2025-06-10T17:00:00Z</cim:IdentifiedObject.name>
+	</cim:RegularTimePoint>
+	
+	<cim:RegularTimePoint rdf:ID="RTP_638851983534761783">
+		<cim:RegularTimePoint.IntervalSchedule rdf:resource="#RIS_638851979162302139"/>
+		<cim:RegularTimePoint.sequenceNumber>33</cim:RegularTimePoint.sequenceNumber>
+		<cim:RegularTimePoint.value1>4150</cim:RegularTimePoint.value1> 
+		<cim:RegularTimePoint.value2>0</cim:RegularTimePoint.value2>
+		<cim:IdentifiedObject.aliasName>TimePointAt1630</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RTP_638851983534761783</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>RegularTimePoint3 at 2025-06-10T16:30:00Z</cim:IdentifiedObject.name>
+	</cim:RegularTimePoint>
+
+	<!--Regular Interval Schedules-->
+	
+	<cim:RegularIntervalSchedule rdf:ID="RIS_638851977408172342">
+		<cim:RegularIntervalSchedule.endTime>2025-06-11T00:00:00Z</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep>PT60M</cim:RegularIntervalSchedule.timeStep>
+		<cim:BasicIntervalSchedule.startTime>2025-06-10T00:00:00Z</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>k</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>W</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>none</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>none</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>DailyRegularIntervalSchedule_ZoneA</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RIS_638851977408172342</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Zone A Daily Regular Interval Schedule</cim:IdentifiedObject.name>
+	</cim:RegularIntervalSchedule>
+	
+	<cim:RegularIntervalSchedule rdf:ID="RIS_638851979162302139">
+		<cim:RegularIntervalSchedule.endTime>2025-06-10T18:00:00Z</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep>PT15M</cim:RegularIntervalSchedule.timeStep>
+		<cim:BasicIntervalSchedule.startTime>2025-06-10T06:00:00Z</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>none</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>degC</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>none</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>none</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>DailyRegularIntervalSchedule_ZoneB</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>RIS_638851979162302139</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Zone B Daily Regular Interval Schedule</cim:IdentifiedObject.name>
+	</cim:RegularIntervalSchedule>
+	
+	<!--Outage Schedules-->
+	
+	<cim:OutageSchedule rdf:ID="OS_638851965633079052">
+		<cim:BasicIntervalSchedule.startTime>2025-06-10T13:00:00Z</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>k</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>h</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>k</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>h</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>FeederA_Outage</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>OS_638851965633079052</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Irregular Outage for Feeder A</cim:IdentifiedObject.name>
+	</cim:OutageSchedule>
+		
+	<cim:OutageSchedule rdf:ID="OS_638851965746514505">
+		<cim:BasicIntervalSchedule.startTime>2025-06-11T14:03:00Z</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>M</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>min</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>M</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>min</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>FeederB_Outage</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>OS_638851965746514505</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Irregular Outage for Feeder B</cim:IdentifiedObject.name>
+	</cim:OutageSchedule>
+			
+	<cim:OutageSchedule rdf:ID="OS_638851970464541529">
+		<cim:BasicIntervalSchedule.startTime>2025-06-16T11:08:20Z</cim:BasicIntervalSchedule.startTime>
+		<cim:BasicIntervalSchedule.value1Multiplier>k</cim:BasicIntervalSchedule.value1Multiplier>
+		<cim:BasicIntervalSchedule.value1Unit>h</cim:BasicIntervalSchedule.value1Unit>
+		<cim:BasicIntervalSchedule.value2Multiplier>k</cim:BasicIntervalSchedule.value2Multiplier>
+		<cim:BasicIntervalSchedule.value2Unit>h</cim:BasicIntervalSchedule.value2Unit>
+		<cim:IdentifiedObject.aliasName>FeederC_Outage</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>OS_638851970464541529</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Irregular Outage for Feeder C</cim:IdentifiedObject.name>
+	</cim:OutageSchedule>
+	
+	<!--Switch Operations-->
+	
+	<cim:SwitchingOperation rdf:ID="SO_638851962947465033">
+		<cim:SwitchingOperation.newState>open</cim:SwitchingOperation.newState>
+		<cim:SwitchingOperation.operationTime>2025-06-10T14:00:00Z</cim:SwitchingOperation.operationTime>
+		<cim:SwitchingOperation.OutageSchedule rdf:resource="#OS_638851965633079052"/>
+		<cim:IdentifiedObject.aliasName>FeederA_SwitchOpen</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SO_638851962947465033</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Open Switch on Feeder A</cim:IdentifiedObject.name>
+	</cim:SwitchingOperation>
+
+	<cim:SwitchingOperation rdf:ID="SO_638851963161194354">
+		<cim:SwitchingOperation.newState>close</cim:SwitchingOperation.newState>
+		<cim:SwitchingOperation.operationTime>2025-06-11T16:30:00Z</cim:SwitchingOperation.operationTime>
+		<cim:SwitchingOperation.OutageSchedule rdf:resource="#OS_638851965746514505"/>
+		<cim:IdentifiedObject.aliasName>FeederB_SwitchClose</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SO_638851963161194354</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Close Switch on Feeder B</cim:IdentifiedObject.name>
+	</cim:SwitchingOperation>
+
+	<cim:SwitchingOperation rdf:ID="SO_638851964779958241">
+		<cim:SwitchingOperation.newState>close</cim:SwitchingOperation.newState>
+		<cim:SwitchingOperation.operationTime>2025-06-10T18:45:00Z</cim:SwitchingOperation.operationTime>
+		<cim:IdentifiedObject.aliasName>ManualSwitchClose</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SO_638851964779958241</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Manual Switch Close Operation</cim:IdentifiedObject.name>
+	</cim:SwitchingOperation>
+
+	<cim:SwitchingOperation rdf:ID="SO_519631663881194354">
+		<cim:SwitchingOperation.newState>close</cim:SwitchingOperation.newState>
+		<cim:SwitchingOperation.operationTime>2025-06-09T16:30:00Z</cim:SwitchingOperation.operationTime>
+		<cim:SwitchingOperation.OutageSchedule rdf:resource="#OS_638851965746514505"/>
+		<cim:IdentifiedObject.aliasName>FeederB_SwitchClose</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>SO_519631663881194354</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Close Switch on Feeder B</cim:IdentifiedObject.name>
+	</cim:SwitchingOperation>
+
+	<!--Disconnectors-->
+	
+	<cim:Disconnector rdf:ID="DISC-8422061000014321">
+		<cim:Switch.SwitchingOperations rdf:resource="#SO_638851962947465033"/>
+		<cim:IdentifiedObject.aliasName>FeederA_Disconnector</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DISC-8422061000014321</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Disconnector at Feeder A</cim:IdentifiedObject.name>
+	</cim:Disconnector>	
+	
+		<cim:Disconnector rdf:ID="DISC-8001442206100321">
+		<cim:Switch.SwitchingOperations rdf:resource="#SO_638851962947465033"/>
+		<cim:IdentifiedObject.aliasName>FeederA2_Disconnector</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DISC-8001442206100321</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Disconnector2 at Feeder A</cim:IdentifiedObject.name>
+	</cim:Disconnector>	
+	
+	<cim:Disconnector rdf:ID="DISC-1634100001602248">
+		<cim:Switch.SwitchingOperations rdf:resource="#SO_638851963161194354"/>
+		<cim:IdentifiedObject.aliasName>FeederB_Disconnector</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DISC-1634100001602248</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Disconnector at Feeder B</cim:IdentifiedObject.name>
+	</cim:Disconnector>
+	
+	<cim:Disconnector rdf:ID="DISC-8653105431602248">
+		<cim:IdentifiedObject.aliasName>FeederX_Disconnector</cim:IdentifiedObject.aliasName>
+		<cim:IdentifiedObject.mRID>DISC-8653105431602248</cim:IdentifiedObject.mRID>
+		<cim:IdentifiedObject.name>Disconnector at Feeder X</cim:IdentifiedObject.name>
+	</cim:Disconnector>
+	
+</rdf:RDF>
