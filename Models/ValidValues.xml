@@ -8,7 +8,7 @@
 	
 	<cim:IrregularTimePoint rdf:ID="ITP_638851985134931970">
 		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851965633079052"/>
-		<cim:IrregularTimePoint.time>2025-06-10T15:45:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.time>4020</cim:IrregularTimePoint.time>
 		<cim:IrregularTimePoint.value1>75.3</cim:IrregularTimePoint.value1> 
 		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
 		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1545</cim:IdentifiedObject.aliasName>
@@ -18,7 +18,7 @@
 
 	<cim:IrregularTimePoint rdf:ID="ITP_638851985951595551">
 		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851965746514505"/>
-		<cim:IrregularTimePoint.time>2025-06-11T15:20:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.time>3124</cim:IrregularTimePoint.time>
 		<cim:IrregularTimePoint.value1>98.6</cim:IrregularTimePoint.value1> 
 		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
 		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1520</cim:IdentifiedObject.aliasName>
@@ -28,7 +28,7 @@
 
 	<cim:IrregularTimePoint rdf:ID="ITP_638851986864244899">
 		<cim:IrregularTimePoint.IntervalSchedule rdf:resource="#OS_638851970464541529"/>
-		<cim:IrregularTimePoint.time>2025-06-16T12:15:00Z</cim:IrregularTimePoint.time>
+		<cim:IrregularTimePoint.time>7574</cim:IrregularTimePoint.time>
 		<cim:IrregularTimePoint.value1>112.4</cim:IrregularTimePoint.value1> 
 		<cim:IrregularTimePoint.value2>0</cim:IrregularTimePoint.value2>
 		<cim:IdentifiedObject.aliasName>IrregularTimePoint_1215</cim:IdentifiedObject.aliasName>
@@ -72,8 +72,8 @@
 	<!--Regular Interval Schedules-->
 	
 	<cim:RegularIntervalSchedule rdf:ID="RIS_638851977408172342">
-		<cim:RegularIntervalSchedule.endTime>2025-06-11T00:00:00Z</cim:RegularIntervalSchedule.endTime>
-		<cim:RegularIntervalSchedule.timeStep>PT60M</cim:RegularIntervalSchedule.timeStep>
+		<cim:RegularIntervalSchedule.endTime>2025-06-15T00:00:00Z</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep>9645</cim:RegularIntervalSchedule.timeStep>
 		<cim:BasicIntervalSchedule.startTime>2025-06-10T00:00:00Z</cim:BasicIntervalSchedule.startTime>
 		<cim:BasicIntervalSchedule.value1Multiplier>k</cim:BasicIntervalSchedule.value1Multiplier>
 		<cim:BasicIntervalSchedule.value1Unit>W</cim:BasicIntervalSchedule.value1Unit>
@@ -85,8 +85,8 @@
 	</cim:RegularIntervalSchedule>
 	
 	<cim:RegularIntervalSchedule rdf:ID="RIS_638851979162302139">
-		<cim:RegularIntervalSchedule.endTime>2025-06-10T18:00:00Z</cim:RegularIntervalSchedule.endTime>
-		<cim:RegularIntervalSchedule.timeStep>PT15M</cim:RegularIntervalSchedule.timeStep>
+		<cim:RegularIntervalSchedule.endTime>2025-06-13T18:00:00Z</cim:RegularIntervalSchedule.endTime>
+		<cim:RegularIntervalSchedule.timeStep>2345</cim:RegularIntervalSchedule.timeStep>
 		<cim:BasicIntervalSchedule.startTime>2025-06-10T06:00:00Z</cim:BasicIntervalSchedule.startTime>
 		<cim:BasicIntervalSchedule.value1Multiplier>none</cim:BasicIntervalSchedule.value1Multiplier>
 		<cim:BasicIntervalSchedule.value1Unit>degC</cim:BasicIntervalSchedule.value1Unit>
@@ -178,7 +178,7 @@
 		<cim:IdentifiedObject.name>Disconnector at Feeder A</cim:IdentifiedObject.name>
 	</cim:Disconnector>	
 	
-		<cim:Disconnector rdf:ID="DISC-8001442206100321">
+	<cim:Disconnector rdf:ID="DISC-8001442206100321">
 		<cim:Switch.SwitchingOperations rdf:resource="#SO_638851962947465033"/>
 		<cim:IdentifiedObject.aliasName>FeederA2_Disconnector</cim:IdentifiedObject.aliasName>
 		<cim:IdentifiedObject.mRID>DISC-8001442206100321</cim:IdentifiedObject.mRID>
