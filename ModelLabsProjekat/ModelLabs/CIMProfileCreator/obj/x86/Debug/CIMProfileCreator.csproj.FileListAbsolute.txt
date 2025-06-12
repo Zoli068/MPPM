@@ -22,3 +22,16 @@ D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\GenerateResource.write.1.tlog
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\Predefined\PredefinedClasses.xml
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\Predefined\PredefinedEnumerations.xml
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\Predefined\PredefinedPackages.xml
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe.config
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\CIMProfileCreator.csproj.AssemblyReference.cache
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.CIMProfileCreatorForm.resources
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.Properties.Resources.resources
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\CIMProfileCreator.csproj.GenerateResource.cache
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\CIMProfileCreator.csproj.CoreCompileInputs.cache
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.exe
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMProfileCreator\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMProfileCreator.pdb

@@ -1,0 +1,227 @@
+﻿<delta id="0">
+  <operations>
+    <operation type="insert">
+      <ResourceDescriptions count="19">
+        <ResourceDescription>
+          <id gid="0x00000001ffffffff" type="OUTAGESCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="OS_638851965633079052" />
+            <Property id="IDOBJ_NAME" value="Irregular Outage for Feeder A" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederA_Outage" />
+            <Property id="BISCH_STIME" value="638851644000000000" />
+            <Property id="BISCH_VAL1MUL" value="k" />
+            <Property id="BISCH_VAL1UN" value="M" />
+            <Property id="BISCH_VAL2MUL" value="k" />
+            <Property id="BISCH_VAL2UN" value="M" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffe" type="OUTAGESCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="OS_638851965746514505" />
+            <Property id="IDOBJ_NAME" value="Irregular Outage for Feeder B" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederB_Outage" />
+            <Property id="BISCH_STIME" value="638852545800000000" />
+            <Property id="BISCH_VAL1MUL" value="M" />
+            <Property id="BISCH_VAL1UN" value="12" />
+            <Property id="BISCH_VAL2MUL" value="M" />
+            <Property id="BISCH_VAL2UN" value="12" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000001fffffffd" type="OUTAGESCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="OS_638851970464541529" />
+            <Property id="IDOBJ_NAME" value="Irregular Outage for Feeder C" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederC_Outage" />
+            <Property id="BISCH_STIME" value="638856761000000000" />
+            <Property id="BISCH_VAL1MUL" value="k" />
+            <Property id="BISCH_VAL1UN" value="M" />
+            <Property id="BISCH_VAL2MUL" value="k" />
+            <Property id="BISCH_VAL2UN" value="M" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002ffffffff" type="SWITCHINGOPERATION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SO_519631663881194354" />
+            <Property id="IDOBJ_NAME" value="Close Switch on Feeder B" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederB_SwitchClose" />
+            <Property id="SWOP_NSTATE" value="close" />
+            <Property id="SWOP_OPTIME" value="638850906000000000" />
+            <Property id="SWOP_OUTSCH" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffe" type="SWITCHINGOPERATION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SO_638851962947465033" />
+            <Property id="IDOBJ_NAME" value="Open Switch on Feeder A" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederA_SwitchOpen" />
+            <Property id="SWOP_NSTATE" value="open" />
+            <Property id="SWOP_OPTIME" value="638851680000000000" />
+            <Property id="SWOP_OUTSCH" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffd" type="SWITCHINGOPERATION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SO_638851963161194354" />
+            <Property id="IDOBJ_NAME" value="Close Switch on Feeder B" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederB_SwitchClose" />
+            <Property id="SWOP_NSTATE" value="close" />
+            <Property id="SWOP_OPTIME" value="638852634000000000" />
+            <Property id="SWOP_OUTSCH" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000002fffffffc" type="SWITCHINGOPERATION" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="SO_638851964779958241" />
+            <Property id="IDOBJ_NAME" value="Manual Switch Close Operation" />
+            <Property id="IDOBJ_ALIASNAME" value="ManualSwitchClose" />
+            <Property id="SWOP_NSTATE" value="close" />
+            <Property id="SWOP_OPTIME" value="638851851000000000" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003ffffffff" type="DISCONNECTOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DISC-1634100001602248" />
+            <Property id="IDOBJ_NAME" value="Disconnector at Feeder B" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederB_Disconnector" />
+            <Property id="SWITCH_SWOP" value="0x00000002fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffe" type="DISCONNECTOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DISC-8001442206100321" />
+            <Property id="IDOBJ_NAME" value="Disconnector2 at Feeder A" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederA2_Disconnector" />
+            <Property id="SWITCH_SWOP" value="0x00000002fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffd" type="DISCONNECTOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DISC-8422061000014321" />
+            <Property id="IDOBJ_NAME" value="Disconnector at Feeder A" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederA_Disconnector" />
+            <Property id="SWITCH_SWOP" value="0x00000002fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000003fffffffc" type="DISCONNECTOR" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="DISC-8653105431602248" />
+            <Property id="IDOBJ_NAME" value="Disconnector at Feeder X" />
+            <Property id="IDOBJ_ALIASNAME" value="FeederX_Disconnector" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004ffffffff" type="REGULARINTERVALSCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RIS_638851977408172342" />
+            <Property id="IDOBJ_NAME" value="Zone A Daily Regular Interval Schedule" />
+            <Property id="IDOBJ_ALIASNAME" value="DailyRegularIntervalSchedule_ZoneA" />
+            <Property id="BISCH_STIME" value="638851176000000000" />
+            <Property id="BISCH_VAL1MUL" value="k" />
+            <Property id="BISCH_VAL1UN" value="25" />
+            <Property id="BISCH_VAL2MUL" value="none" />
+            <Property id="BISCH_VAL2UN" value="14" />
+            <Property id="RISCH_ENDTIME" value="638855496000000000" />
+            <Property id="RISCH_TIMESTEP" value="9645" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000004fffffffe" type="REGULARINTERVALSCHEDULE" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RIS_638851979162302139" />
+            <Property id="IDOBJ_NAME" value="Zone B Daily Regular Interval Schedule" />
+            <Property id="IDOBJ_ALIASNAME" value="DailyRegularIntervalSchedule_ZoneB" />
+            <Property id="BISCH_STIME" value="638851392000000000" />
+            <Property id="BISCH_VAL1MUL" value="none" />
+            <Property id="BISCH_VAL1UN" value="G" />
+            <Property id="BISCH_VAL2MUL" value="none" />
+            <Property id="BISCH_VAL2UN" value="14" />
+            <Property id="RISCH_ENDTIME" value="638854416000000000" />
+            <Property id="RISCH_TIMESTEP" value="2345" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005ffffffff" type="IRREGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ITP_638851985134931970" />
+            <Property id="IDOBJ_NAME" value="IrregularTimePoint at 2025-06-10 15:45:00 UTC" />
+            <Property id="IDOBJ_ALIASNAME" value="IrregularTimePoint_1545" />
+            <Property id="ITP_TIME" value="4020" />
+            <Property id="ITP_VAL1" value="75.3" />
+            <Property id="ITP_VAL2" value="0" />
+            <Property id="ITP_IRISCH" value="0x00000001ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffe" type="IRREGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ITP_638851985951595551" />
+            <Property id="IDOBJ_NAME" value="IrregularTimePoint at 2025-06-11 15:20:00 UTC" />
+            <Property id="IDOBJ_ALIASNAME" value="IrregularTimePoint_1520" />
+            <Property id="ITP_TIME" value="3124" />
+            <Property id="ITP_VAL1" value="98.6" />
+            <Property id="ITP_VAL2" value="0" />
+            <Property id="ITP_IRISCH" value="0x00000001fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000005fffffffd" type="IRREGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="ITP_638851986864244899" />
+            <Property id="IDOBJ_NAME" value="IrregularTimePoint at 2025-06-16 12:15:00 UTC" />
+            <Property id="IDOBJ_ALIASNAME" value="IrregularTimePoint_1215" />
+            <Property id="ITP_TIME" value="7574" />
+            <Property id="ITP_VAL1" value="112.4" />
+            <Property id="ITP_VAL2" value="0" />
+            <Property id="ITP_IRISCH" value="0x00000001fffffffd" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006ffffffff" type="REGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTP_638851981595714726" />
+            <Property id="IDOBJ_NAME" value="RegularTimePoint at 2025-06-10T04:00:00Z" />
+            <Property id="IDOBJ_ALIASNAME" value="TimepointAt04h" />
+            <Property id="RTP_SEQ" value="5" />
+            <Property id="RTP_VAL1" value="3500" />
+            <Property id="RTP_VAL2" value="0" />
+            <Property id="RTP_RISCH" value="0x00000004ffffffff" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffe" type="REGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTP_638851982754066461" />
+            <Property id="IDOBJ_NAME" value="RegularTimePoint2 at 2025-06-10T17:00:00Z" />
+            <Property id="IDOBJ_ALIASNAME" value="TimePointAt17h" />
+            <Property id="RTP_SEQ" value="18" />
+            <Property id="RTP_VAL1" value="4200" />
+            <Property id="RTP_VAL2" value="0" />
+            <Property id="RTP_RISCH" value="0x00000004fffffffe" />
+          </Properties>
+        </ResourceDescription>
+        <ResourceDescription>
+          <id gid="0x00000006fffffffd" type="REGULARTIMEPOINT" />
+          <Properties>
+            <Property id="IDOBJ_MRID" value="RTP_638851983534761783" />
+            <Property id="IDOBJ_NAME" value="RegularTimePoint3 at 2025-06-10T16:30:00Z" />
+            <Property id="IDOBJ_ALIASNAME" value="TimePointAt1630" />
+            <Property id="RTP_SEQ" value="33" />
+            <Property id="RTP_VAL1" value="4150" />
+            <Property id="RTP_VAL2" value="0" />
+            <Property id="RTP_RISCH" value="0x00000004fffffffe" />
+          </Properties>
+        </ResourceDescription>
+      </ResourceDescriptions>
+    </operation>
+  </operations>
+</delta>

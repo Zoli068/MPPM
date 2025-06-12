@@ -13,3 +13,10 @@ D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\ResolveAssemblyReference.cache
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.dll
 D:\shared\simesVezbe\Projekat\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.pdb
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMAdapter.dll
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\bin\FTN.ESI.SIMES.CIM.CIMAdapter.pdb
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\CIMAdapter.csproj.AssemblyReference.cache
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\CIMAdapter.csproj.CoreCompileInputs.cache
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\CIMAdapter.csproj.Up2Date
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.dll
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\CIMAdapter\obj\x86\Debug\FTN.ESI.SIMES.CIM.CIMAdapter.pdb
