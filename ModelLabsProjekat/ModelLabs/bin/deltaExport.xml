@@ -10,9 +10,9 @@
             <Property id="IDOBJ_ALIASNAME" value="FeederA_Outage" />
             <Property id="BISCH_STIME" value="638851644000000000" />
             <Property id="BISCH_VAL1MUL" value="k" />
-            <Property id="BISCH_VAL1UN" value="M" />
+            <Property id="BISCH_VAL1UN" value="h" />
             <Property id="BISCH_VAL2MUL" value="k" />
-            <Property id="BISCH_VAL2UN" value="M" />
+            <Property id="BISCH_VAL2UN" value="h" />
           </Properties>
         </ResourceDescription>
         <ResourceDescription>
@@ -23,9 +23,9 @@
             <Property id="IDOBJ_ALIASNAME" value="FeederB_Outage" />
             <Property id="BISCH_STIME" value="638852545800000000" />
             <Property id="BISCH_VAL1MUL" value="M" />
-            <Property id="BISCH_VAL1UN" value="12" />
+            <Property id="BISCH_VAL1UN" value="min" />
             <Property id="BISCH_VAL2MUL" value="M" />
-            <Property id="BISCH_VAL2UN" value="12" />
+            <Property id="BISCH_VAL2UN" value="min" />
           </Properties>
         </ResourceDescription>
         <ResourceDescription>
@@ -36,9 +36,9 @@
             <Property id="IDOBJ_ALIASNAME" value="FeederC_Outage" />
             <Property id="BISCH_STIME" value="638856761000000000" />
             <Property id="BISCH_VAL1MUL" value="k" />
-            <Property id="BISCH_VAL1UN" value="M" />
+            <Property id="BISCH_VAL1UN" value="h" />
             <Property id="BISCH_VAL2MUL" value="k" />
-            <Property id="BISCH_VAL2UN" value="M" />
+            <Property id="BISCH_VAL2UN" value="h" />
           </Properties>
         </ResourceDescription>
         <ResourceDescription>
@@ -127,9 +127,9 @@
             <Property id="IDOBJ_ALIASNAME" value="DailyRegularIntervalSchedule_ZoneA" />
             <Property id="BISCH_STIME" value="638851176000000000" />
             <Property id="BISCH_VAL1MUL" value="k" />
-            <Property id="BISCH_VAL1UN" value="25" />
+            <Property id="BISCH_VAL1UN" value="W" />
             <Property id="BISCH_VAL2MUL" value="none" />
-            <Property id="BISCH_VAL2UN" value="14" />
+            <Property id="BISCH_VAL2UN" value="none" />
             <Property id="RISCH_ENDTIME" value="638855496000000000" />
             <Property id="RISCH_TIMESTEP" value="9645" />
           </Properties>
@@ -142,9 +142,9 @@
             <Property id="IDOBJ_ALIASNAME" value="DailyRegularIntervalSchedule_ZoneB" />
             <Property id="BISCH_STIME" value="638851392000000000" />
             <Property id="BISCH_VAL1MUL" value="none" />
-            <Property id="BISCH_VAL1UN" value="G" />
+            <Property id="BISCH_VAL1UN" value="degC" />
             <Property id="BISCH_VAL2MUL" value="none" />
-            <Property id="BISCH_VAL2UN" value="14" />
+            <Property id="BISCH_VAL2UN" value="none" />
             <Property id="RISCH_ENDTIME" value="638854416000000000" />
             <Property id="RISCH_TIMESTEP" value="2345" />
           </Properties>

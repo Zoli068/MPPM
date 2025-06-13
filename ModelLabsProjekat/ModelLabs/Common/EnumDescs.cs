@@ -13,8 +13,8 @@ namespace FTN.Common
 		{
 			property2enumType.Add(ModelCode.BISCH_VAL1MUL, typeof(UnitMultiplier));
 			property2enumType.Add(ModelCode.BISCH_VAL2MUL, typeof(UnitMultiplier));
-			property2enumType.Add(ModelCode.BISCH_VAL1UN, typeof(UnitMultiplier));
-			property2enumType.Add(ModelCode.BISCH_VAL2UN, typeof(UnitMultiplier));
+			property2enumType.Add(ModelCode.BISCH_VAL1UN, typeof(UnitSymbol));
+			property2enumType.Add(ModelCode.BISCH_VAL2UN, typeof(UnitSymbol));
 			property2enumType.Add(ModelCode.SWOP_NSTATE, typeof(SwitchState));
 		}
 

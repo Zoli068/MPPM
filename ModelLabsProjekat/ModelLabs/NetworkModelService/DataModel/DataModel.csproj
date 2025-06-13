@@ -40,6 +40,7 @@
     <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
     <DefineConstants>TRACE;DEBUG</DefineConstants>
     <Prefer32Bit>false</Prefer32Bit>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
     <PlatformTarget>x86</PlatformTarget>
@@ -89,16 +90,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Core\BaseVoltage .cs" />
+    <Compile Include="Core\BasicIntervalSchedule.cs" />
     <Compile Include="Core\ConductingEquipment.cs" />
     <Compile Include="Core\Equipment.cs" />
-    <Compile Include="Core\Location.cs" />
     <Compile Include="Core\IdentifiedObject.cs" />
+    <Compile Include="Core\IreggularIntervalSchedule.cs" />
+    <Compile Include="Core\IrregularTimePoint.cs" />
     <Compile Include="Core\PowerSystemResource.cs" />
+    <Compile Include="Core\RegularIntervalSchedule.cs" />
+    <Compile Include="Core\RegularTimePoint.cs" />
+    <Compile Include="Outage\OutageSchedule.cs" />
+    <Compile Include="Outage\SwitchingOperation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Wires\WindingTest.cs" />
-    <Compile Include="Wires\PowerTransformer.cs" />
-    <Compile Include="Wires\TransformerWinding.cs" />
+    <Compile Include="Wires\Disconnector.cs" />
+    <Compile Include="Wires\Switch.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Common\Common.csproj">
