@@ -1,0 +1,423 @@
+2025. 06. 16. 16:57:13 : Starting Network Model Serivice...
+2025. 06. 16. 16:57:14 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 16:57:14 : Endpoints:
+2025. 06. 16. 16:57:14 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 16:57:14 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 16:57:14 : Trace level: Info
+2025. 06. 16. 16:57:14 : The Network Model Service is started.
+2025. 06. 16. 16:57:14 : Press <Enter> to stop the service.
+2025. 06. 16. 16:57:37 : Applying  delta to network model.
+2025. 06. 16. 16:57:37 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 16:57:37 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 16:57:37 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 16:57:37 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:00:04 : Starting Network Model Serivice...
+2025. 06. 16. 17:00:05 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:00:05 : Endpoints:
+2025. 06. 16. 17:00:05 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:00:05 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:00:05 : Trace level: Info
+2025. 06. 16. 17:00:05 : The Network Model Service is started.
+2025. 06. 16. 17:00:05 : Press <Enter> to stop the service.
+2025. 06. 16. 17:00:23 : Applying  delta to network model.
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:00:23 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:00:23 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:00:23 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:00:23 : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float).
+2025. 06. 16. 17:03:28 : Applying  delta to network model.
+2025. 06. 16. 17:03:37 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:04:24 : Starting Network Model Serivice...
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:04:24 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:04:24 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:04:24 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:04:24 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:04:25 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:04:25 : Endpoints:
+2025. 06. 16. 17:04:25 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:04:25 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:04:25 : Trace level: Info
+2025. 06. 16. 17:04:25 : The Network Model Service is started.
+2025. 06. 16. 17:04:25 : Press <Enter> to stop the service.
+2025. 06. 16. 17:04:48 : Applying  delta to network model.
+2025. 06. 16. 17:04:59 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:06:06 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:06:06 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:06:27 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:07:10 : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float).
+2025. 06. 16. 17:08:51 : Starting Network Model Serivice...
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:08:51 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:08:51 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:54 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:54 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:08:54 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:08:54 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:55 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:55 : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:08:55 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:08:55 : Endpoints:
+2025. 06. 16. 17:08:55 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:08:55 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:08:55 : Trace level: Info
+2025. 06. 16. 17:08:55 : The Network Model Service is started.
+2025. 06. 16. 17:08:55 : Press <Enter> to stop the service.
+2025. 06. 16. 17:09:09 : Applying  delta to network model.
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000100000007).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000100000008).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000100000009).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000200000009).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000020000000a).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000020000000b).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000020000000c).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000300000009).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000030000000a).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000030000000b).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (000000030000000c).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000400000005).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000400000006).
+2025. 06. 16. 17:09:22 : Inserting entity with GID (0000000500000003).
+2025. 06. 16. 17:09:22 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:09 : Starting Network Model Serivice...
+2025. 06. 16. 17:12:09 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:12:35 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:12:49 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:56 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:56 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:12:56 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:12:58 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:58 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:58 : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:12:59 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:12:59 : Endpoints:
+2025. 06. 16. 17:12:59 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:12:59 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:12:59 : Trace level: Info
+2025. 06. 16. 17:12:59 : The Network Model Service is started.
+2025. 06. 16. 17:12:59 : Press <Enter> to stop the service.
+2025. 06. 16. 17:14:42 : Starting Network Model Serivice...
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:14:43 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:14:49 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:49 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:49 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:14:49 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:14:49 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:49 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:49 : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:14:50 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:14:50 : Endpoints:
+2025. 06. 16. 17:14:50 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:14:50 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:14:50 : Trace level: Info
+2025. 06. 16. 17:14:50 : The Network Model Service is started.
+2025. 06. 16. 17:14:50 : Press <Enter> to stop the service.
+2025. 06. 16. 17:15:02 : Applying  delta to network model.
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000100000007).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000100000008).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000100000009).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000200000009).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000020000000a).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000020000000b).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000020000000c).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000300000009).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000030000000a).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000030000000b).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (000000030000000c).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000400000005).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000400000006).
+2025. 06. 16. 17:15:02 : Inserting entity with GID (0000000500000003).
+2025. 06. 16. 17:15:41 : Starting Network Model Serivice...
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:15:42 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:16:09 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:09 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:09 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:16:09 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:16:11 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:11 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:11 : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:11 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:16:11 : Endpoints:
+2025. 06. 16. 17:16:11 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:16:11 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:16:11 : Trace level: Info
+2025. 06. 16. 17:16:11 : The Network Model Service is started.
+2025. 06. 16. 17:16:11 : Press <Enter> to stop the service.
+2025. 06. 16. 17:16:31 : Starting Network Model Serivice...
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:16:31 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:16:32 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:32 : Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:32 : Error while applying delta (id = 1) during service initialization. Failed to insert entity (GID = 0x0000000500000001) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:16:32 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:16:33 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:33 : Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:33 : Error while applying delta (id = 2) during service initialization. Failed to insert entity (GID = 0x0000000500000002) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:34 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:16:34 : Endpoints:
+2025. 06. 16. 17:16:34 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:16:34 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:16:34 : Trace level: Info
+2025. 06. 16. 17:16:34 : The Network Model Service is started.
+2025. 06. 16. 17:16:34 : Press <Enter> to stop the service.
+2025. 06. 16. 17:16:47 : Applying  delta to network model.
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000100000007).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000100000008).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000100000009).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000200000009).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000020000000a).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000020000000b).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000020000000c).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000300000009).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000030000000a).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000030000000b).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (000000030000000c).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000400000005).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000400000006).
+2025. 06. 16. 17:16:47 : Inserting entity with GID (0000000500000003).
+2025. 06. 16. 17:16:52 : Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:55 : Failed to insert entity (GID = 0x0000000500000003) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float)
+2025. 06. 16. 17:16:55 : Applying delta to network model failed. Failed to insert entity (GID = 0x0000000500000003) into model. Failed to return value from property for specified type (Int64) because it is incompatible with actual property type (Float).
+2025. 06. 16. 17:18:16 : Starting Network Model Serivice...
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000100000001).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000100000002).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000100000003).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000200000001).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000200000002).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000200000003).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000200000004).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000300000001).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000300000002).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000300000003).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000300000004).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000400000001).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000400000002).
+2025. 06. 16. 17:18:16 : Inserting entity with GID (0000000500000001).
+2025. 06. 16. 17:18:23 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:18:24 : Inserting entity with GID (0000000500000003).
+2025. 06. 16. 17:18:24 : Inserting entity with GID (0000000600000001).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000600000002).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000600000003).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000004).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000005).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000006).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000200000005).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000200000006).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000200000007).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000200000008).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000300000005).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000300000006).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000300000007).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000300000008).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000400000003).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000400000004).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000500000002).
+2025. 06. 16. 17:18:25 : Failed to insert entity because entity with specified GID (0000000500000002) already exists in network model.
+2025. 06. 16. 17:18:25 : Error while applying delta (id = 2) during service initialization. Failed to insert entity because entity with specified GID (0000000500000002) already exists in network model.
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000007).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000008).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000100000009).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000200000009).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000020000000a).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000020000000b).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000020000000c).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000300000009).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000030000000a).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000030000000b).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (000000030000000c).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000400000005).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000400000006).
+2025. 06. 16. 17:18:25 : Inserting entity with GID (0000000500000003).
+2025. 06. 16. 17:18:25 : Failed to insert entity because entity with specified GID (0000000500000003) already exists in network model.
+2025. 06. 16. 17:18:25 : Error while applying delta (id = 3) during service initialization. Failed to insert entity because entity with specified GID (0000000500000003) already exists in network model.
+2025. 06. 16. 17:18:26 : The WCF service GenericDataAccess is ready.
+2025. 06. 16. 17:18:26 : Endpoints:
+2025. 06. 16. 17:18:26 : net.tcp://localhost:10000/NetworkModelService/GDA/
+2025. 06. 16. 17:18:26 : Connection string: ../NetworkModelData.data
+2025. 06. 16. 17:18:26 : Trace level: Info
+2025. 06. 16. 17:18:26 : The Network Model Service is started.
+2025. 06. 16. 17:18:26 : Press <Enter> to stop the service.
+2025. 06. 16. 17:18:37 : Applying  delta to network model.
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000010000000a).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000010000000b).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000010000000c).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000020000000d).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000020000000e).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000020000000f).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (0000000200000010).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000030000000d).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000030000000e).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (000000030000000f).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (0000000300000010).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (0000000400000007).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (0000000400000008).
+2025. 06. 16. 17:18:37 : Inserting entity with GID (0000000500000004).
+2025. 06. 16. 17:18:41 : Inserting entity with GID (0000000500000005).
+2025. 06. 16. 17:18:43 : Inserting entity with GID (0000000500000006).
+2025. 06. 16. 17:18:43 : Inserting entity with GID (0000000600000004).
+2025. 06. 16. 17:18:44 : Inserting entity with GID (0000000600000005).
+2025. 06. 16. 17:18:47 : Inserting entity with GID (0000000600000006).
+2025. 06. 16. 17:18:47 : Applying delta to network model successfully finished.

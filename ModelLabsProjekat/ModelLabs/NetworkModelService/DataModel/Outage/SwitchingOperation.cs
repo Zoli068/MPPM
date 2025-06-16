@@ -11,7 +11,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Outage
         private SwitchState newstate;
         private DateTime operationTime;
         private long outageSchedule=0;
-        private List<long> switches;
+        private List<long> switches = new List<long>();
         
         public SwitchingOperation(long globalId) : base(globalId)
         {

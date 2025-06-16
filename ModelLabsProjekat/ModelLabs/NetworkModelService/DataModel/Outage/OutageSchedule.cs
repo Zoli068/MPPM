@@ -7,7 +7,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Outage
     public class OutageSchedule : IreggularIntervalSchedule
     {
         
-        private List<long> switchingOperations;
+        private List<long> switchingOperations = new List<long>();
         
         public OutageSchedule(long globalId) : base(globalId)
         {

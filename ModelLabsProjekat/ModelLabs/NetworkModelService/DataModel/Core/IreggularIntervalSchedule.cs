@@ -6,7 +6,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
     public class IreggularIntervalSchedule : BasicIntervalSchedule
     {
 
-        private List<long> timePoints;
+        private List<long> timePoints=new List<long>();
 
         public IreggularIntervalSchedule(long globalId) : base(globalId)
         {

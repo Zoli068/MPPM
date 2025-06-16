@@ -91,15 +91,15 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
                     break;
 
                 case ModelCode.ITP_TIME:
-                    time = property.AsLong();
+                    time = property.AsFloat();
                     break;
 
                 case ModelCode.ITP_VAL1:
-                    value1 = property.AsLong();
+                    value1 = property.AsFloat();
                     break;
 
                 case ModelCode.ITP_VAL2:
-                    value2 = property.AsLong();
+                    value2 = property.AsFloat();
                     break;
 
                 default:

@@ -95,11 +95,11 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
                     break;
 
                 case ModelCode.RTP_VAL1:
-                    value1 = property.AsLong();
+                    value1 = property.AsFloat();
                     break;
 
                 case ModelCode.RTP_VAL2:
-                    value2 = property.AsLong();
+                    value2 = property.AsFloat();
                     break;
 
                 default:

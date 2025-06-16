@@ -9,7 +9,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
         private DateTime endTime;
         private float timeStep = 0;
-        private List<long> timePoints;
+        private List<long> timePoints = new List<long>();
 
         public RegularIntervalSchedule(long globalId) : base(globalId)
         {

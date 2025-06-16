@@ -15,7 +15,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 	{
 		private static ModelResourcesDesc resourcesDescs = new ModelResourcesDesc();
 
-		private long globalId;	
+		private long globalId=0;	
 		private string name = string.Empty;	
 		private string mrid = string.Empty;
 		private string aliasName = string.Empty;
