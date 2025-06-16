@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Configuration;
+﻿using System.Configuration;
 using System.IO;
 
 namespace FTN.Services.NetworkModelService.TestClient
 {
-	public class Config
+    public class Config
 	{
 
         private string resultDirecotry = string.Empty;

@@ -10,7 +10,6 @@
 		private StringBuilder report = new StringBuilder();
 		private bool success = true;
 
-
 		public StringBuilder Report
 		{
 			get 

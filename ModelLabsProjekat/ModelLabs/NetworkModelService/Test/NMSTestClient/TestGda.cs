@@ -1,24 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.ServiceModel;
-using System.Text.RegularExpressions;
-using System.Xml.Linq;
-using System.IO;
-using System.Xml;
-using System.Threading;
-using System.Diagnostics;
-using FTN.Common;
+﻿using FTN.Common;
 using FTN.ServiceContracts;
 using FTN.Services.NetworkModelService.TestClient;
-
+using System;
+using System.Collections.Generic;
+using System.Text;
+using System.Xml;
 
 namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 {
-	public class TestGda : IDisposable
-	{			
-
+    public class TestGda : IDisposable
+	{		
+        
 		private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
 
 		private NetworkModelGDAProxy gdaQueryProxy = null;
@@ -164,9 +156,6 @@ namespace TelventDMS.Services.NetworkModelService.TestClient.Tests
 			try
 			{						
 				List<ModelCode> properties = new List<ModelCode>();
-                properties.Add(ModelCode.IDOBJ_DESCRIPTION);
-                properties.Add(ModelCode.IDOBJ_MRID);
-                properties.Add(ModelCode.IDOBJ_NAME);
 						
 				int iteratorId = GdaQueryProxy.GetRelatedValues(sourceGlobalId, properties, association);
 				int resourcesLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorId);

@@ -2,9 +2,6 @@
 using FTN.Services.NetworkModelService.DataModel.Core;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Outage
 {
@@ -13,7 +10,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Outage
 
         private SwitchState newstate;
         private DateTime operationTime;
-        private long outageSchedule;
+        private long outageSchedule=0;
         private List<long> switches;
         
         public SwitchingOperation(long globalId) : base(globalId)
@@ -174,6 +171,5 @@ namespace FTN.Services.NetworkModelService.DataModel.Outage
         }
 
         #endregion IReference implementation
-
     }
 }

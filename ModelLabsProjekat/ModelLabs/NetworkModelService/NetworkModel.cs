@@ -1,18 +1,14 @@
-﻿using System;
+﻿using FTN.Common;
+using FTN.Services.NetworkModelService.DataModel.Core;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
 using System.Text;
 using System.Xml;
-using FTN.Common;
-using FTN.Services.NetworkModelService.DataModel;
-using FTN.Services.NetworkModelService.DataModel.Core;
-using FTN.Services.NetworkModelService.DataModel.Wires;
 
 namespace FTN.Services.NetworkModelService
-{	
-	public class NetworkModel
+{
+    public class NetworkModel
 	{
 		/// <summary>
 		/// Dictionaru which contains all data: Key - DMSType, Value - Container
@@ -760,6 +756,5 @@ namespace FTN.Services.NetworkModelService
 
 			return typesCounters;
 		}
-
 	}
 }

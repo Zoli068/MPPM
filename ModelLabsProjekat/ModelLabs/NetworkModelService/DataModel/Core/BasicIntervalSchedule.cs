@@ -1,9 +1,5 @@
 ﻿using FTN.Common;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
@@ -30,7 +26,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
         {
             if (base.Equals(obj))
             {
-                BasicIntervalSchedule x = (BasicIntervalSchedule)x;
+                BasicIntervalSchedule x = (BasicIntervalSchedule)obj;
 
                 return (x.startTime == this.startTime && x.value1Unit == this.value1Unit && x.value2Unit == this.value2Unit &&
                         x.value1Multiplier == this.value1Multiplier && x.value2Multiplier == this.value2Multiplier);
@@ -116,7 +112,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
                     break;
 
                 case ModelCode.BISCH_VAL2UN:
-                    value1Unit = (UnitSymbol)property.AsEnum();
+                    value2Unit = (UnitSymbol)property.AsEnum();
                     break;
 
                 default:

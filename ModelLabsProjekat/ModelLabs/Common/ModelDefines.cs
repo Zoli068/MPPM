@@ -1,11 +1,9 @@
 using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace FTN.Common
 {
-	
-	public enum DMSType : short
+
+    public enum DMSType : short
 	{		
 		MASK_TYPE							= unchecked((short)0xFFFF),
 
@@ -87,5 +85,3 @@ namespace FTN.Common
 		MASK_DELFROMNBL8	  = unchecked((long)0xfffffff000000000),		
 	}																		
 }
-
-

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FTN.Common
 {
-	[DataContract]
+    [DataContract]
 	
 	public class Association
 	{

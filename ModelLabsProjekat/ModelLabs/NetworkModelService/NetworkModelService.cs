@@ -1,17 +1,11 @@
-﻿using System;
+﻿using FTN.Common;
+using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Text;
-using System.Threading;
 using System.ServiceModel;
-using FTN.Services.NetworkModelService;
-using System.ServiceModel.Description;
-using FTN.Common;
 
 namespace FTN.Services.NetworkModelService
 {
-	public class NetworkModelService : IDisposable
+    public class NetworkModelService : IDisposable
 	{				
 		private NetworkModel nm = null;
 		private List<ServiceHost> hosts = null;

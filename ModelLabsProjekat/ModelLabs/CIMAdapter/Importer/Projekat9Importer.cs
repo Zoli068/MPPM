@@ -1,15 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using CIM.Model;
+﻿using CIM.Model;
 using FTN.Common;
 using FTN.ESI.SIMES.CIM.CIMAdapter.Manager;
+using System;
+using System.Collections.Generic;
 
 namespace FTN.ESI.SIMES.CIM.CIMAdapter.Importer
 {
-	/// <summary>
-	/// PowerTransformerImporter
-	/// </summary>
-	public class Projekat9Importer
+    public class Projekat9Importer
 	{
 		/// <summary> Singleton </summary>
 		private static Projekat9Importer ptImporter = null;

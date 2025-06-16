@@ -1,13 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using FTN.Common;
 using System.Configuration;
 
 
 namespace FTN.Services.NetworkModelService
 {
-	public class Config 
+    public class Config 
 	{
 
 		private string connectionString = string.Empty;
@@ -48,7 +45,5 @@ namespace FTN.Services.NetworkModelService
 
 			return String.Format("{0}{1}.{2}", valueWithSystemId < 0 ? "-" : "", systemId, valueWithoutSystemId);
 		}
-
-		
 	}
 }

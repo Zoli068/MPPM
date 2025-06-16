@@ -1,13 +1,10 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Text;
 using System.Runtime.Serialization;
 
 namespace FTN.Common
 {
-	
-	[DataContract]
+
+    [DataContract]
 	public class ModelFault
 	{
 		private ErrorCode code = ErrorCode.Unknown;		

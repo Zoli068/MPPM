@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.ServiceModel.Description;
-using System.ServiceModel.Channels;
-using FTN.Common;
+﻿using FTN.Common;
+using System;
 
 namespace FTN.Services.NetworkModelService
 {
-	public class Program
+    public class Program
 	{
 		
 		private static void Main(string[] args)

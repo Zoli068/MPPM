@@ -1,16 +1,12 @@
 ﻿using FTN.Common;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
     public class IrregularTimePoint : IdentifiedObject
     {
 
-        private long intervalSchedule;
+        private long intervalSchedule=0;
         private float time;
         private float value1;
         private float value2;
@@ -114,20 +110,18 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
         #endregion
 
-
         #region IReference implementation
 
         public override void GetReferences(Dictionary<ModelCode, List<long>> references, TypeOfReference refType)
         {
             if (IntervalSchedule != 0 && (refType != TypeOfReference.Reference || refType != TypeOfReference.Both))
             {
-                references[ModelCode.SWITCH_SWOP] = new List<long> { IntervalSchedule };
+                references[ModelCode.ITP_IRISCH] = new List<long> { IntervalSchedule };
             }
 
             base.GetReferences(references, refType);
         }
 
         #endregion IReference implementation
-
     }
 }

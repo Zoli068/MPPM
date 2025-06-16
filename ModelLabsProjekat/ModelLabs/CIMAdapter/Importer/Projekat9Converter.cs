@@ -2,11 +2,10 @@
 {
     using FTN;
     using FTN.Common;
-    using System;
 
     /// <summary>
-    /// PowerTransformerConverter has methods for populating
-    /// ResourceDescription objects using PowerTransformerCIMProfile_Labs objects.
+    /// Projekat9Converter has methods for populating
+    /// ResourceDescription objects using Projekat9CIMProfile_Labs.dll
     /// </summary>
     public static class Projekat9Converter
 	{

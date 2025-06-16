@@ -1,16 +1,12 @@
 ﻿using FTN.Common;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
     public class RegularTimePoint : IdentifiedObject
     {
 
-        private long intervalSchedule;
+        private long intervalSchedule=0;
         private int sequenceNumber;
         private float value1;
         private float value2;
@@ -113,7 +109,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
         }
 
         #endregion
-
 
         #region IReference implementation
 

@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Diagnostics;
 
 namespace FTN.Common
 {
-	public class CommonTrace
+    public class CommonTrace
 	{
 		private static TraceSwitch traceSwitch = new TraceSwitch("TraceLevel", "Trace lelvel for Model Service");
 

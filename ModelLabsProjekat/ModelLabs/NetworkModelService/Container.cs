@@ -1,21 +1,15 @@
-﻿using System;
-using System.Collections;
-using System.Collections.ObjectModel;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Xml;
-using FTN.Common;
+﻿using FTN.Common;
 using FTN.Services.NetworkModelService.DataModel.Core;
+using FTN.Services.NetworkModelService.DataModel.Outage;
 using FTN.Services.NetworkModelService.DataModel.Wires;
-using FTN.Services.NetworkModelService.DataModel;
+using System;
+using System.Collections.Generic;
+using System.Linq;
 
 
 namespace FTN.Services.NetworkModelService
-{		
-	public class Container
+{
+    public class Container
 	{
 		/// <summary>
 		/// The dictionary of entities. Key = GlobaId, Value = Entity
@@ -122,21 +116,24 @@ namespace FTN.Services.NetworkModelService
 			IdentifiedObject io = null;			
 			switch ((DMSType)type)
 			{
-				case DMSType.BASEVOLTAGE:
-					io = new BaseVoltage(globalId);
+				case DMSType.OUTAGESCHEDULE:
+					io = new OutageSchedule(globalId);
 					break;
 
-				case DMSType.LOCATION:
-					io = new Location(globalId);
+				case DMSType.SWITCHINGOPERATION:
+					io = new SwitchingOperation(globalId);
 					break;
-				case DMSType.POWERTR:
-					io = new PowerTransformer(globalId);
+				case DMSType.DISCONNECTOR:
+					io = new Disconnector(globalId);
 					break;
-				case DMSType.POWERTRWINDING:
-					io = new TransformerWinding(globalId);
+				case DMSType.REGULARINTERVALSCHEDULE:
+					io = new RegularIntervalSchedule(globalId);
 					break;
-				case DMSType.WINDINGTEST:
-					io = new WindingTest(globalId);
+				case DMSType.IRREGULARTIMEPOINT:
+					io = new IrregularTimePoint(globalId);
+					break;					
+				case DMSType.REGULARTIMEPOINT:
+					io = new RegularTimePoint(globalId);
 					break;			
 
 				default:					

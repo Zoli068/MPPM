@@ -1,18 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.ServiceModel;
-using System.Text;
-using System.Security.Principal;
-using System.Threading;
-using FTN.Common;
-using System.Collections;
+﻿using FTN.Common;
 using FTN.ServiceContracts;
+using System;
+using System.Collections.Generic;
 
 
 namespace FTN.Services.NetworkModelService
 {
-	public class GenericDataAccess : INetworkModelGDAContract
+    public class GenericDataAccess : INetworkModelGDAContract
 	{
 		private static Dictionary<int, ResourceIterator> resourceItMap = new Dictionary<int, ResourceIterator>();
 		private static int resourceItId = 0;
@@ -195,6 +189,5 @@ namespace FTN.Services.NetworkModelService
 				return resourceItMap.Remove(iteratorId);
 			}
 		}
-
 	}
 }

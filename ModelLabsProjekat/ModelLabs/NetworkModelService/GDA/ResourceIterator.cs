@@ -1,14 +1,10 @@
+using FTN.Common;
 using System;
 using System.Collections.Generic;
-using System.Collections;
-using System.Text;
-using System.Diagnostics;
-using FTN.Common;
-using FTN.Services.NetworkModelService.DataModel.Core;
 
 namespace FTN.Services.NetworkModelService
-{	
-	public class ResourceIterator
+{
+    public class ResourceIterator
 	{
         private static NetworkModel networkModel = null;
 

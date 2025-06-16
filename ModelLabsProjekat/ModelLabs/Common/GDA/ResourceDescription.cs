@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
 using System.Text;
 using System.Xml;
 
 namespace FTN.Common
 {
-	/// <summary>
-	/// A class that describes generic model resource
-	/// </summary>
-	[Serializable]
+    /// <summary>
+    /// A class that describes generic model resource
+    /// </summary>
+    [Serializable]
 	[DataContract]	
 	public class ResourceDescription
 	{

@@ -1,17 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using FTN.Common;
+﻿using FTN.Common;
 using FTN.Services.NetworkModelService.DataModel.Core;
+using System.Collections.Generic;
 
 namespace FTN.Services.NetworkModelService.DataModel.Wires
 {
     public class Switch : ConductingEquipment
     {
-        private long switchingOperations;
+        private long switchingOperations=0;
 
         public Switch(long globalId) : base(globalId)
         {
@@ -25,14 +20,13 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
             {
                 Switch x = (Switch)obj;
 
-                return x.switchingOperations == switchingOperations;
+                return x.switchingOperations == this.switchingOperations;
             }
             else
             {
                 return false;
             }
         }
-
 
         public override int GetHashCode()
         {
@@ -82,7 +76,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Wires
         }
 
         #endregion
-
 
         #region IReference implementation
 

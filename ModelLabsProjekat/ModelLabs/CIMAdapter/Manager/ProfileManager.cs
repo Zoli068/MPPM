@@ -8,7 +8,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Manager
 		Projekat9 = 0,
 	};
 
-
 	/// <summary>
 	/// ProfileManager
 	/// </summary>

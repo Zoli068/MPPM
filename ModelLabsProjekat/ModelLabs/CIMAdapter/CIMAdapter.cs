@@ -1,17 +1,17 @@
-﻿using System;
-using System.IO;
-using System.Reflection;
-using System.Threading;
-using CIM.Model;
+﻿using CIM.Model;
 using CIMParser;
 using FTN.Common;
 using FTN.ESI.SIMES.CIM.CIMAdapter.Importer;
 using FTN.ESI.SIMES.CIM.CIMAdapter.Manager;
 using FTN.ServiceContracts;
+using System;
+using System.IO;
+using System.Reflection;
+using System.Threading;
 
 namespace FTN.ESI.SIMES.CIM.CIMAdapter
 {
-	public class CIMAdapter
+    public class CIMAdapter
 	{
         private NetworkModelGDAProxy gdaQueryProxy = null;
        
@@ -68,7 +68,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter
 			Thread.CurrentThread.CurrentCulture = culture;
 			return updateResult;
 		}
-
 
 		private bool LoadModelFromExtractFile(Stream extract, SupportedProfiles extractType, ref ConcreteModel concreteModelResult, ref Assembly assembly, out string log)
 		{
@@ -158,6 +157,5 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter
 				return false;
 			}
 		}
-
 	}
 }

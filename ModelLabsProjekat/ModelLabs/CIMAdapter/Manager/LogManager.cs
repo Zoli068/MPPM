@@ -1,7 +1,6 @@
 ﻿using System;
 using System.IO;
 
-
 namespace FTN.ESI.SIMES.CIM.CIMAdapter.Manager
 {
 	public enum LogLevel
@@ -23,12 +22,10 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Manager
 
 		private static string globalLogFullPath;
 	
-	
 		static LogManager()
 		{
 			globalLogFullPath = string.Format(".{0}{1}", Path.DirectorySeparatorChar, GlobalLogFileName);
 		}
-
 
 		public static void Log(string message, LogLevel logLevel = LogLevel.Error)
 		{
@@ -54,7 +51,6 @@ namespace FTN.ESI.SIMES.CIM.CIMAdapter.Manager
 				Console.WriteLine(e.StackTrace);
 			}
 		}
-
 
 		#region private block
 		private static void AppendToLog(LogLevel logLevel, string logMessage, TextWriter w)

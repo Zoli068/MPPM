@@ -1,13 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using FTN.Common;
-using System.Xml;
 
 namespace FTN.Common
-{	
-	public class ResourcePropertiesDesc
+{
+    public class ResourcePropertiesDesc
 	{
 		/// <summary>
 		/// Code of the class type.

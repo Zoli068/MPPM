@@ -1,16 +1,10 @@
-﻿using System;
+﻿using FTN.Common;
+using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.Serialization;
-using System.Text;
-using System.Xml;
-using System.Reflection;
-using FTN.Common;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
-	public enum TypeOfReference : short
+    public enum TypeOfReference : short
 	{
 		Reference = 1,
 		Target = 2,
@@ -19,14 +13,12 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 
 	public class IdentifiedObject
 	{
-
 		private static ModelResourcesDesc resourcesDescs = new ModelResourcesDesc();
 
 		private long globalId;	
 		private string name = string.Empty;	
 		private string mrid = string.Empty;
 		private string aliasName = string.Empty;
-
 
 		public IdentifiedObject(long globalId)
 		{
@@ -37,7 +29,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
         public string Mrid { get => mrid; set => mrid = value; }
         public string Name { get => name; set => name = value; }
         public string AliasName { get => aliasName; set => aliasName = value; }
-
 
 		public static bool operator ==(IdentifiedObject x, IdentifiedObject y)
 		{
@@ -127,7 +118,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
 		{
 			switch(property.Id)
 			{
-				case ModelCode.IDOBJ_NAME:
+                case ModelCode.IDOBJ_NAME:
 					name = property.AsString();					
 					break;
 

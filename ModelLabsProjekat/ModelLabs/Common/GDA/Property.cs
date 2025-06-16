@@ -1,16 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Linq;
 using System.Runtime.Serialization;
-using System.Text;
 
 namespace FTN.Common
 {
-	/// <summary>
-	/// An enumeration that defines property types
-	/// </summary>	
-	public enum PropertyType : short
+    /// <summary>
+    /// An enumeration that defines property types
+    /// </summary>	
+    public enum PropertyType : short
 	{
 		Empty = 0,
 

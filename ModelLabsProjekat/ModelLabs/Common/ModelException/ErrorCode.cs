@@ -1,13 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Runtime.Serialization;
-
-namespace FTN.Common
+﻿namespace FTN.Common
 {
-	
-	public enum ErrorCode
+
+    public enum ErrorCode
 	{
 		Unknown						= 0x0000,
 		InvalidModel				= 0x0001,

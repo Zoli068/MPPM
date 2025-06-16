@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Runtime.Serialization;
+using System.Text;
 
 namespace FTN.Common
-{	
-	public enum ResultType : byte
+{
+    public enum ResultType : byte
 	{
 		Succeeded = 0,	
 		Failed = 1	

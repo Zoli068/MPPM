@@ -1,20 +1,12 @@
-﻿using System;
+﻿using FTN.Common;
+using System;
 using System.Collections.Generic;
-using System.Configuration;
-using System.Diagnostics;
-using System.IO;
-using System.Linq;
-using System.ServiceModel;
 using System.Text;
-using FTN.Common;
-using System.Xml.Linq;
-using System.ServiceModel.Channels;
 using TelventDMS.Services.NetworkModelService.TestClient.Tests;
-
 
 namespace FTN.Services.NetworkModelService.TestClient
 {
-	public class Program
+    public class Program
 	{
 		[STAThread]
 		public static void Main(string[] args)
@@ -43,7 +35,6 @@ namespace FTN.Services.NetworkModelService.TestClient
             message = string.Format("Result directory: {0}", Config.Instance.ResultDirecotry);
             Console.WriteLine(message);
             CommonTrace.WriteTrace(CommonTrace.TraceInfo, message);
-
 
 			try
 			{
@@ -285,4 +276,3 @@ namespace FTN.Services.NetworkModelService.TestClient
         #endregion Help methods
     }
 }
-

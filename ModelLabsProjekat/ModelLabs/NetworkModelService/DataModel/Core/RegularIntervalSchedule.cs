@@ -1,10 +1,6 @@
 ﻿using FTN.Common;
-using FTN.Services.NetworkModelService.DataModel.Outage;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace FTN.Services.NetworkModelService.DataModel.Core
 {
@@ -12,7 +8,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
     {
 
         private DateTime endTime;
-        private float timeStep;
+        private float timeStep = 0;
         private List<long> timePoints;
 
         public RegularIntervalSchedule(long globalId) : base(globalId)
@@ -29,7 +25,7 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
             {
                 RegularIntervalSchedule x = (RegularIntervalSchedule)obj;
 
-                return (x.endTime == this.endTime && CompareHelper.CompareLists(x.TimePoints, this.TimePoints, true));
+                return (x.endTime == this.endTime && x.timeStep == this.timeStep && CompareHelper.CompareLists(x.TimePoints, this.TimePoints, true));
             }
             else
             {
@@ -157,8 +153,6 @@ namespace FTN.Services.NetworkModelService.DataModel.Core
         }
 
         #endregion IReference implementation
-
-
 
     }
 }
