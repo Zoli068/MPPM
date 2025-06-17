@@ -1,14 +1,161 @@
-﻿using MVVM.Helpers;
+﻿using FTN.Common;
+using FTN.ESI.SIMES.CIM.CIMAdapter;
+using FTN.ServiceContracts;
+using MVVM.Commands;
+using MVVM.Helpers;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace MVVM.ViewModels
 {
-     class GetValuesViewModel:BindableBase
+    class GetValuesViewModel : BindableBase
     {
+        public MyICommand GetValuesCommand { get; set; }
+
+        public ObservableCollection<Tuple<string, string>> ReadedValues { get; set; }
+        private string gidValue;
+        private CIMAdapter adapter;
+        private List<DMSType> dmsTypes;
+        private string selectedAttributeToAdd;
+        private string selectedAttributeToRemove;
+        private ObservableCollection<string> selectedAttributes =new ObservableCollection<string>();
+        private DMSType selectedDMSType;
+        private ObservableCollection<string> attributes;
+        private ModelResourcesDesc modelResourcesDesc;
+
+        public GetValuesViewModel(CIMAdapter adapter, ModelResourcesDesc modelResourcesDesc)
+        {
+            this.adapter = adapter;
+            this.modelResourcesDesc = modelResourcesDesc;
+            GetValuesCommand = new MyICommand(getValues);
+
+            DMSTypes = modelResourcesDesc.AllDMSTypes.ToList();   
+            DMSTypes.Remove(DMSType.MASK_TYPE);
+
+            if(DMSTypes.Count>0 )
+            {
+                SelectedDMSType = DMSTypes[1];
+            }
+        }
+        
+        private void getValues()
+        {
+            long gid=0;
+            
+            if (selectedAttributes.Count == 0)
+            {
+                MessageBox.Show("You must select atleast 1 attribute", "No selected attributes", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            if(long.TryParse(gidValue,out gid))
+            {
+                if (gid <= 0)
+                {
+                    MessageBox.Show("GID must be greater than zero", "Invalid GID Value", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("GID must be number", "Invalid GID Value", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+
+            List<ModelCode> properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
+
+
+            GetValuesCommand gvc = new GetValuesCommand(modelResourcesDesc);
+
+            ReadedValues=new ObservableCollection<Tuple<string,string>>(gvc.GetValues(gid, properties));
+        }
+
+
+        private void updateAttributes()
+        {
+            if (SelectedDMSType != 0)
+            {
+                Attributes = new ObservableCollection<string>(modelResourcesDesc.GetAllPropertyIds(SelectedDMSType).Select((x) => x.ToString()).ToList());
+                Attributes.Remove(ModelCode.IDOBJ_GID.ToString());
+                SelectedAttributes = new ObservableCollection<string>();
+            }
+        }
+
+        public string SelectedAttributeToRemove
+        {
+            get => selectedAttributeToRemove;
+            set
+            {
+                if(value!=string.Empty)
+                {
+                    SelectedAttributes.Remove(value);
+                    Attributes.Add(value);
+                }
+            }
+        }
+
+        public string SelectedAttributeToAdd
+        {
+            get => selectedAttributeToAdd;
+            set
+            {
+                Attributes.Remove(value);
+                SelectedAttributes.Add(value);
+            }
+        }
+
+        public List<DMSType> DMSTypes
+        {
+            get => dmsTypes;
+            set
+            {
+                SetProperty(ref dmsTypes, value);
+            }
+        }
+
+        public ObservableCollection<string> SelectedAttributes
+        {
+            get => selectedAttributes;
+            set
+            {
+                SetProperty(ref selectedAttributes, value);
+            }
+        }
+
+        public ObservableCollection<string> Attributes
+        {
+            get => attributes;
+            set
+            {
+                SetProperty(ref attributes, value);
+            }
+        }
+
+        public string GIDValue
+        {
+            get => gidValue;
+            set
+            {
+                SetProperty(ref gidValue,value);
+            }
+        }
+
+        public DMSType SelectedDMSType
+        {
+            get => selectedDMSType;
+            set
+            {
+                SetProperty(ref selectedDMSType, value);
+                updateAttributes();
+            }
+        }
+
+
 
     }
 }

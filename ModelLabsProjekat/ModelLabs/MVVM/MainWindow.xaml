@@ -7,8 +7,7 @@
         xmlns:views="clr-namespace:MVVM.Views"
         Title="GDA client"        
         Width="1068" Height="600"
-        ResizeMode="CanResize"
-        Background="Beige"
+        ResizeMode="NoResize"
         WindowStartupLocation="CenterScreen">
 
     <Window.DataContext>
@@ -21,6 +20,9 @@
         </DataTemplate>
         <DataTemplate DataType="{x:Type viewModels:GetValuesViewModel}">
             <views:GetValuesView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:AvailableGIDViewModel}">
+            <views:AvailableGIDViewModel/>
         </DataTemplate>
     </Window.Resources>
 
@@ -41,5 +43,6 @@
             </TabControl.ContentTemplate>
         </TabControl>
     </Grid>
+    
 </Window>
 

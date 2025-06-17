@@ -11,13 +11,15 @@ namespace MVVM.Commands
 {
     public static class ApplyDeltaCommand
     {
-        public static bool ApplyDMSNetworkModelDeltaCommand(Delta nmsDelta,CIMAdapter adapter)
+        public static bool ApplyDMSNetworkModelDeltaCommand(Delta nmsDelta,CIMAdapter adapter,out string log)
         {
+            log = "Failed";
+
             if (nmsDelta != null)
             {
                 try
                 {
-                    string log = adapter.ApplyUpdates(nmsDelta);
+                    log = adapter.ApplyUpdates(nmsDelta);
                 }
                 catch (Exception)
                 {

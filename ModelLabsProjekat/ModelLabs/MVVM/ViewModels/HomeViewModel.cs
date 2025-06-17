@@ -5,9 +5,12 @@ using MVVM.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace MVVM.ViewModels
 {
@@ -16,6 +19,7 @@ namespace MVVM.ViewModels
         private CIMAdapter adapter;
         private Visibility selectedFileVisibilty=Visibility.Hidden;
         private string selectedFile=string.Empty;
+        private ModelResourcesDesc mrd = new ModelResourcesDesc();
 
         public MyICommand SelectFileCommand { get; set; }
         public MyICommand ApplyInsertDelta { get; set; }
@@ -69,8 +73,40 @@ namespace MVVM.ViewModels
             }
             success = false;
 
-            success = ApplyDeltaCommand.ApplyDMSNetworkModelDeltaCommand(nmsDelta, adapter);
+            string log;
 
+            success = ApplyDeltaCommand.ApplyDMSNetworkModelDeltaCommand(nmsDelta, adapter,out log);
+
+            List<string> serverIDs = new List<string>();
+            MatchCollection matches = Regex.Matches(log, @"Server globalId:\s+(0x[0-9a-fA-F]+)");
+
+            foreach (Match match in matches)
+            {
+                string hex = match.Groups[1].Value;
+                hex = hex.Replace("0x", "");
+                hex = hex.Replace("\"", "");
+                long id = Convert.ToInt64(hex,16);
+                ushort typeVal;
+
+                unchecked
+                {
+                    typeVal = (ushort)((id >> 32) & 0xFFFF);
+                }
+
+
+                DMSType type =(DMSType)typeVal;
+                ModelCode code = mrd.GetModelCodeFromType(type);
+
+                if (type != DMSType.MASK_TYPE)
+                {
+                    if (!AvailableGIDViewModel.AvailableGIDs[type].Contains(id.ToString())) 
+                    {
+                        AvailableGIDViewModel.AvailableGIDs[type].Add(id.ToString());
+                    }
+                }
+            }
+
+            
             if (!success)
             {
                 MessageBox.Show("Can't apply delta to Network Model Service", "Error with applying delta", MessageBoxButton.OK, MessageBoxImage.Warning);
