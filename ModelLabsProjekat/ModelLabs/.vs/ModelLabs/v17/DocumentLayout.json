@@ -3,8 +3,56 @@
   "WorkspaceRootPath": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\helpers\\resourcedescriptiontostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\helpers\\resourcedescriptiontostring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\modeldefines.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\commands\\getvaluescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\commands\\getvaluescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\commands\\getextentvaluescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\commands\\getextentvaluescommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\viewmodels\\getvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodels\\getvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\viewmodels\\getextentvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodels\\getextentvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\getvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\getvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\getextentvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\getextentvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\availablegidview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\availablegidview.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\availablegidview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\availablegidview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodels\\mainviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\common\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{892CBE15-9ED7-4540-81FA-0EAABA592138}|Common\\Common.csproj|solutionrelative:common\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,15 +82,167 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModelDefines.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
+              "RelativeDocumentMoniker": "Common\\ModelDefines.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\Common\\ModelDefines.cs",
+              "RelativeToolTip": "Common\\ModelDefines.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T21:00:27.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ResourceDescriptionToString.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Helpers\\ResourceDescriptionToString.cs",
+              "RelativeDocumentMoniker": "MVVM\\Helpers\\ResourceDescriptionToString.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Helpers\\ResourceDescriptionToString.cs",
+              "RelativeToolTip": "MVVM\\Helpers\\ResourceDescriptionToString.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAABzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:56:38.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GetValuesCommand.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Commands\\GetValuesCommand.cs",
+              "RelativeDocumentMoniker": "MVVM\\Commands\\GetValuesCommand.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Commands\\GetValuesCommand.cs",
+              "RelativeToolTip": "MVVM\\Commands\\GetValuesCommand.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAADUAAABsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:21:50.858Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GetExtentValuesCommand.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Commands\\GetExtentValuesCommand.cs",
+              "RelativeDocumentMoniker": "MVVM\\Commands\\GetExtentValuesCommand.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Commands\\GetExtentValuesCommand.cs",
+              "RelativeToolTip": "MVVM\\Commands\\GetExtentValuesCommand.cs",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAAEAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:25:48.34Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AvailableGIDView.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\AvailableGIDView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\Views\\AvailableGIDView.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\AvailableGIDView.xaml",
+              "RelativeToolTip": "MVVM\\Views\\AvailableGIDView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T20:16:44.24Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\MainWindow.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\MainWindow.xaml",
+              "RelativeToolTip": "MVVM\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T20:16:04.02Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetExtentValuesView.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetExtentValuesView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\Views\\GetExtentValuesView.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetExtentValuesView.xaml",
+              "RelativeToolTip": "MVVM\\Views\\GetExtentValuesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T20:08:50.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "GetExtentValuesViewModel.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
+              "ViewState": "AQIAAEgAAAAAAAAAAAAAAK0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:08:20.508Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "GetValuesViewModel.cs",
               "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetValuesViewModel.cs",
               "RelativeDocumentMoniker": "MVVM\\ViewModels\\GetValuesViewModel.cs",
               "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetValuesViewModel.cs",
               "RelativeToolTip": "MVVM\\ViewModels\\GetValuesViewModel.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAAAEoAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-17T21:48:58.325Z",
+              "WhenOpened": "2025-06-18T20:45:22.188Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetValuesView.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetValuesView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\Views\\GetValuesView.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetValuesView.xaml",
+              "RelativeToolTip": "MVVM\\Views\\GetValuesView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-18T19:35:44.668Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AvailableGIDView.xaml.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\AvailableGIDView.xaml.cs",
+              "RelativeDocumentMoniker": "MVVM\\Views\\AvailableGIDView.xaml.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\AvailableGIDView.xaml.cs",
+              "RelativeToolTip": "MVVM\\Views\\AvailableGIDView.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:20:06.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MainViewModel.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\MainViewModel.cs",
+              "RelativeDocumentMoniker": "MVVM\\ViewModels\\MainViewModel.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\MainViewModel.cs",
+              "RelativeToolTip": "MVVM\\ViewModels\\MainViewModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T20:17:09.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\Common\\Enums.cs",
+              "RelativeDocumentMoniker": "Common\\Enums.cs",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\Common\\Enums.cs",
+              "RelativeToolTip": "Common\\Enums.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-18T19:58:31.187Z",
               "EditorCaption": ""
             }
           ]

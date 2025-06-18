@@ -22,7 +22,10 @@
             <views:GetValuesView/>
         </DataTemplate>
         <DataTemplate DataType="{x:Type viewModels:AvailableGIDViewModel}">
-            <views:AvailableGIDViewModel/>
+            <views:AvailableGIDView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:GetExtentValuesViewModel}">
+            <views:GetExtentValuesView/>
         </DataTemplate>
     </Window.Resources>
 

@@ -17,7 +17,7 @@ namespace MVVM.ViewModels
     {
         public MyICommand GetValuesCommand { get; set; }
 
-        public ObservableCollection<Tuple<string, string>> ReadedValues { get; set; }
+        private ObservableCollection<Tuple<string, string>> readedValues;
         private string gidValue;
         private CIMAdapter adapter;
         private List<DMSType> dmsTypes;
@@ -73,6 +73,11 @@ namespace MVVM.ViewModels
             GetValuesCommand gvc = new GetValuesCommand(modelResourcesDesc);
 
             ReadedValues=new ObservableCollection<Tuple<string,string>>(gvc.GetValues(gid, properties));
+
+            if (ReadedValues.Count() == 0)
+            {
+                MessageBox.Show("With the selected options there, NMS sent back no result", "No readed value", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
 
 
@@ -81,8 +86,16 @@ namespace MVVM.ViewModels
             if (SelectedDMSType != 0)
             {
                 Attributes = new ObservableCollection<string>(modelResourcesDesc.GetAllPropertyIds(SelectedDMSType).Select((x) => x.ToString()).ToList());
-                Attributes.Remove(ModelCode.IDOBJ_GID.ToString());
                 SelectedAttributes = new ObservableCollection<string>();
+            }
+        }
+
+        public ObservableCollection<Tuple<string, string>> ReadedValues
+        {
+            get => readedValues;
+            set
+            {
+                SetProperty(ref readedValues,value);
             }
         }
 
@@ -152,6 +165,8 @@ namespace MVVM.ViewModels
             {
                 SetProperty(ref selectedDMSType, value);
                 updateAttributes();
+                ReadedValues = new ObservableCollection<Tuple<string, string>>();
+                GIDValue = string.Empty;
             }
         }
 

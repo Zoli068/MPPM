@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\App.xaml
-4-756084001
+51710225067
 
-20-745544637
+231210829137
 17221109492
-MainWindow.xaml;Views\AvailableGIDViewModel.xaml;Views\GetValuesView.xaml;Views\HomeView.xaml;
+MainWindow.xaml;Views\AvailableGIDView.xaml;Views\GetExtentValuesView.xaml;Views\GetValuesView.xaml;Views\HomeView.xaml;
 
 False
 

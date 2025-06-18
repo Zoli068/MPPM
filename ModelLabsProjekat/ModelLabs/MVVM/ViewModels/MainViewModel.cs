@@ -22,6 +22,7 @@ namespace MVVM.ViewModels
         {
             Views.Add(new TabItemViewModel("Home",new HomeViewModel(adapter)));
             Views.Add(new TabItemViewModel("Get Values",new GetValuesViewModel(adapter, modelResourcesDesc)));
+            Views.Add(new TabItemViewModel("Get Extent Values",new GetExtentValuesViewModel(adapter, modelResourcesDesc)));
             Views.Add(new TabItemViewModel("Available GIDs", new AvailableGIDViewModel()));
             IsNMSPopulated = false;
         }

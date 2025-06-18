@@ -36,5 +36,29 @@
         </StackPanel>
 
         <Button Grid.Row="4" Margin="25 5 25 5" FontSize="25" Command="{Binding GetValuesCommand}" >Get Values</Button>
+
+        <TextBlock Grid.Row="0" Margin="0 10 0 0" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="30">Readed values</TextBlock>
+        <TextBlock Grid.Row="0" Margin="0 65 0 0"  Grid.Column="1" HorizontalAlignment="Center" FontSize="25">Attribute name</TextBlock>
+        <TextBlock Grid.Row="0" Margin="0 65 0 0"  Grid.Column="2" HorizontalAlignment="Center" FontSize="25">Attribute Value</TextBlock>
+
+        <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" Grid.Row="1" Grid.RowSpan="4" Grid.Column="1" Grid.ColumnSpan="2" ItemsSource="{Binding ReadedValues}" Margin="10">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Border BorderThickness="1" BorderBrush="Black">
+                        
+                    <Grid Margin="6">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="325" />
+                            <ColumnDefinition Width="325" />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock  Grid.Column="0" Margin="-15 0 0 0" FontSize="15" Text="{Binding Item1}" FontWeight="Bold"  HorizontalAlignment="Center"/>
+                        <TextBlock Grid.Column="1"  Margin="30 0 0 0" FontSize="15" Text="{Binding Item2}" HorizontalAlignment="Center"/>
+                    </Grid>
+                    </Border>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
     </Grid>
 </UserControl>

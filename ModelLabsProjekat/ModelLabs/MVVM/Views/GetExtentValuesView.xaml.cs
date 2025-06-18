@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace MVVM.Views
 {
     /// <summary>
-    /// Interaction logic for AvailableGIDViewModel.xaml
+    /// Interaction logic for GetExtentValuesView.xaml
     /// </summary>
-    public partial class AvailableGIDViewModel : UserControl
+    public partial class GetExtentValuesView : UserControl
     {
-        public AvailableGIDViewModel()
+        public GetExtentValuesView()
         {
             InitializeComponent();
         }
