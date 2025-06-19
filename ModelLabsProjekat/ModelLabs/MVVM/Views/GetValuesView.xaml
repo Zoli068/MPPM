@@ -27,7 +27,7 @@
 
         <StackPanel Grid.Row="2" Margin="25 0 25 0">
             <TextBlock HorizontalAlignment="Center" Margin="0 0 0 0"  FontSize="25">Selected attrbiutes</TextBlock>
-            <ListBox VerticalAlignment="Stretch" MinHeight="100" MaxHeight="100" SelectionMode="Single"  ItemsSource="{Binding SelectedAttributes}" SelectedItem="{Binding SelectedAttributeToRemove}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+            <ListBox  VerticalAlignment="Stretch" MinHeight="100" MaxHeight="100" SelectionMode="Single"  ItemsSource="{Binding SelectedAttributes}" SelectedItem="{Binding SelectedAttributeToRemove}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto" />
         </StackPanel>
 
         <StackPanel Grid.Row="3" Margin="0 0 0 0">
@@ -52,8 +52,8 @@
                             <ColumnDefinition Width="325" />
                         </Grid.ColumnDefinitions>
 
-                        <TextBlock  Grid.Column="0" Margin="-15 0 0 0" FontSize="15" Text="{Binding Item1}" FontWeight="Bold"  HorizontalAlignment="Center"/>
-                        <TextBlock Grid.Column="1"  Margin="30 0 0 0" FontSize="15" Text="{Binding Item2}" HorizontalAlignment="Center"/>
+                            <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="0" Margin="-15 0 0 0" FontSize="15" Text="{Binding Item1}" FontWeight="Bold"  HorizontalAlignment="Center"/>
+                            <TextBlock  TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="1"  Margin="30 0 0 0" FontSize="15" Text="{Binding Item2}" HorizontalAlignment="Center"/>
                     </Grid>
                     </Border>
                 </DataTemplate>

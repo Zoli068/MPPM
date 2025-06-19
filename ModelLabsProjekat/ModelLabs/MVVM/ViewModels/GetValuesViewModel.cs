@@ -104,10 +104,13 @@ namespace MVVM.ViewModels
             get => selectedAttributeToRemove;
             set
             {
-                if(value!=string.Empty)
+                if (value != null)
                 {
-                    SelectedAttributes.Remove(value);
-                    Attributes.Add(value);
+                    if(value!=string.Empty)
+                    {
+                        SelectedAttributes.Remove(value);
+                        Attributes.Add(value);
+                    }
                 }
             }
         }
@@ -117,8 +120,14 @@ namespace MVVM.ViewModels
             get => selectedAttributeToAdd;
             set
             {
-                Attributes.Remove(value);
-                SelectedAttributes.Add(value);
+                if (value != null)
+                {
+                    if (value != string.Empty)
+                    {
+                        Attributes.Remove(value);
+                        SelectedAttributes.Add(value);
+                    }
+                }
             }
         }
 

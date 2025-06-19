@@ -1,6 +1,7 @@
 ﻿using FTN.Common;
 using FTN.ServiceContracts;
 using MVVM.Helpers;
+using MVVM.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -67,6 +68,7 @@ namespace MVVM.Commands
 
                 foreach (ResourceDescription val in results)
                 {
+                    UpdateAvailableGIds( val);
                     sendingBackValue.Add(ResourceDescriptionToListOfStrings.ConvertToListOfStrings(val));
                 }
 
@@ -76,6 +78,30 @@ namespace MVVM.Commands
             catch (Exception ex) { }
 
             return new List<List<Tuple<string, string>>>();
+        }
+
+
+        private void UpdateAvailableGIds(ResourceDescription rd)
+        {
+            if (rd == null) { return; }
+
+            ushort typeVal;
+            unchecked
+            {
+                typeVal = (ushort)((rd.Id >> 32) & 0xFFFF);
+            }
+
+
+            DMSType type = (DMSType)typeVal;
+            ModelCode code = modelResourcesDesc.GetModelCodeFromType(type);
+
+            if (type != DMSType.MASK_TYPE)
+            {
+                if (!AvailableGIDViewModel.AvailableGIDs[type].Contains(rd.Id.ToString()))
+                {
+                    AvailableGIDViewModel.AvailableGIDs[type].Add(rd.Id.ToString());
+                }
+            }
         }
     }
 }

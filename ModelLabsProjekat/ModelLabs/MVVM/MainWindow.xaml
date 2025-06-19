@@ -24,6 +24,9 @@
         <DataTemplate DataType="{x:Type viewModels:AvailableGIDViewModel}">
             <views:AvailableGIDView/>
         </DataTemplate>
+        <DataTemplate DataType="{x:Type viewModels:GetRelatedValuesViewModel}">
+            <views:GetRelatedValues/>
+        </DataTemplate>
         <DataTemplate DataType="{x:Type viewModels:GetExtentValuesViewModel}">
             <views:GetExtentValuesView/>
         </DataTemplate>

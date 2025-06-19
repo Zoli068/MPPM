@@ -17,16 +17,16 @@ namespace MVVM.ViewModels
         public MyICommand GetExtentValuesCommand { get; set; }
 
         private List<List<Tuple<string, string>>> readedComplexValues;
+        private ObservableCollection<Tuple<string, string>> readedValues;
         private int selectedResultNumber;
         private ObservableCollection<int> selectedResultNumbers=new ObservableCollection<int>();
-        private ObservableCollection<Tuple<string, string>> readedValues;
-        private CIMAdapter adapter;
         private List<DMSType> dmsTypes;
+        private DMSType selectedDMSType;
         private string selectedAttributeToAdd;
         private string selectedAttributeToRemove;
         private ObservableCollection<string> selectedAttributes = new ObservableCollection<string>();
-        private DMSType selectedDMSType;
-        private ObservableCollection<string> attributes;
+        private ObservableCollection<string> attributes =new ObservableCollection<string>();
+        private CIMAdapter adapter;
         private ModelResourcesDesc modelResourcesDesc;
 
         public GetExtentValuesViewModel(CIMAdapter adapter, ModelResourcesDesc modelResourcesDesc)
@@ -47,6 +47,13 @@ namespace MVVM.ViewModels
         private void getExentValues()
         {
             List<ModelCode> properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
+
+
+            if (selectedAttributes.Count == 0)
+            {
+                MessageBox.Show("You must select atleast 1 attribute", "No selected attributes", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
 
             SelectedResultNumbers = new ObservableCollection<int>();
 
@@ -95,6 +102,11 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref  selectedResultNumber, value);
+                if (readedComplexValues.Count == 0)
+                {
+                    return;
+                }
+
                 ReadedValues = new ObservableCollection<Tuple<string, string>>(readedComplexValues[SelectedResultNumber-1]);
             }
         }
@@ -114,10 +126,14 @@ namespace MVVM.ViewModels
             get => selectedAttributeToRemove;
             set
             {
-                if (value != string.Empty)
+                if (value != null)
                 {
-                    SelectedAttributes.Remove(value);
-                    Attributes.Add(value);
+                    if (value != string.Empty)
+                    {
+                        SelectedAttributes.Remove(value);
+                        Attributes.Add(value);
+                        selectedAttributeToRemove = string.Empty;
+                    }
                 }
             }
         }
@@ -127,8 +143,15 @@ namespace MVVM.ViewModels
             get => selectedAttributeToAdd;
             set
             {
-                Attributes.Remove(value);
-                SelectedAttributes.Add(value);
+                if (value != null)
+                {
+                    if (value != string.Empty)
+                    {
+                        Attributes.Remove(value);
+                        SelectedAttributes.Add(value);
+                        selectedAttributeToAdd = string.Empty;
+                    }
+                }
             }
         }
 

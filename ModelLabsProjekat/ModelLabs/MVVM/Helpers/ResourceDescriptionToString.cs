@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Markup;
 namespace MVVM.Helpers
 {
     public static class ResourceDescriptionToListOfStrings
@@ -37,7 +38,23 @@ namespace MVVM.Helpers
                         }
                         else
                         {
-                             response.Add(new Tuple<string,string>(prop.Id.ToString(),prop.ToString()));               
+                            if((0x00000000000000ff & (long)prop.Id) == 0x19)
+                            {
+                                List<long> references = prop.AsReferences();
+                               string res = "";
+                                int num = 0;
+                                foreach(long val in references)
+                                {
+                                    num++;
+                                    res += val.ToString()+"   ";
+                                }
+
+                                response.Add(new Tuple<string, string>(prop.Id.ToString(), res));
+                            }
+                            else
+                            {
+                                response.Add(new Tuple<string,string>(prop.Id.ToString(),prop.ToString()));               
+                            }
                         }
                     }
 

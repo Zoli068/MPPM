@@ -32,3 +32,5 @@ D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelL
 D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\obj\Debug\MVVM.csproj.Up2Date
 D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\obj\Debug\MVVM.exe
 D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\obj\Debug\MVVM.pdb
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\obj\Debug\Views\GetRelatedValuesView.g.cs
+D:\Fakultet\IV godina\modeli pod\PROJEKAT\Projekat\MPPM\ModelLabsProjekat\ModelLabs\MVVM\obj\Debug\Views\GetRelatedValuesView.baml

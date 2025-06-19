@@ -57,12 +57,15 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Commands\GetExtentValuesCommand.cs" />
+    <Compile Include="Commands\GetRelatedValuesCommand.cs" />
     <Compile Include="Commands\GetValuesCommand.cs" />
     <Compile Include="Helpers\BindableBase.cs" />
+    <Compile Include="Helpers\GetTargetingModelCode.cs" />
     <Compile Include="Helpers\MyICommand.cs" />
     <Compile Include="Helpers\ResourceDescriptionToString.cs" />
     <Compile Include="ViewModels\AvailableGIDViewModel.cs" />
     <Compile Include="ViewModels\GetExtentValuesViewModel.cs" />
+    <Compile Include="ViewModels\GetRelatedValuesViewModel.cs" />
     <Compile Include="ViewModels\GetValuesViewModel.cs" />
     <Compile Include="ViewModels\HomeViewModel.cs" />
     <Compile Include="ViewModels\MainViewModel.cs" />
@@ -72,6 +75,9 @@
     </Compile>
     <Compile Include="Views\GetExtentValuesView.xaml.cs">
       <DependentUpon>GetExtentValuesView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GetRelatedValuesView.xaml.cs">
+      <DependentUpon>GetRelatedValuesView.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\GetValuesView.xaml.cs">
       <DependentUpon>GetValuesView.xaml</DependentUpon>
@@ -99,6 +105,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\GetExtentValuesView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\GetRelatedValuesView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
