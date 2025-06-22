@@ -1,29 +1,21 @@
 ﻿using FTN.Common;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Markup;
 namespace MVVM.Helpers
 {
     public static class ResourceDescriptionToListOfStrings
     {
-
         public static List<Tuple<string, string>> ConvertToListOfStrings(ResourceDescription rd)
         {
+            Type type = null;
+            EnumDescs enumDescs = new EnumDescs();
             List<Tuple<string, string>> response = new List<Tuple<string, string>>();
 
-            EnumDescs enumDescs = new EnumDescs();
             if (rd != null) 
             {
                 foreach (Property prop in  rd.Properties) 
-                {
-
-                    Type type = null;
-
+                {            
                     type = enumDescs.GetEnumTypeForPropertyId(prop.Id, false);
-
 
                     if(type != null)
                     {
@@ -40,9 +32,10 @@ namespace MVVM.Helpers
                         {
                             if((0x00000000000000ff & (long)prop.Id) == 0x19)
                             {
-                                List<long> references = prop.AsReferences();
-                               string res = "";
                                 int num = 0;
+                                string res = "";
+                                List<long> references = prop.AsReferences();
+
                                 foreach(long val in references)
                                 {
                                     num++;
@@ -57,7 +50,6 @@ namespace MVVM.Helpers
                             }
                         }
                     }
-
                 }
             }
             return response;

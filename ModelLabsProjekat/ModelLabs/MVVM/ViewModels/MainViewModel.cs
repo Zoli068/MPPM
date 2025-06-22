@@ -1,20 +1,17 @@
-﻿using MVVM.Helpers;
-using MVVM.Views;
-using System.Collections.ObjectModel;
-using System.Windows;
-using FTN.Common;
+﻿using FTN.Common;
 using FTN.ESI.SIMES.CIM.CIMAdapter;
-using FTN.ServiceContracts;
+using MVVM.Helpers;
+using System.Collections.ObjectModel;
 
 namespace MVVM.ViewModels
 {
     public class MainViewModel:BindableBase
     {
-        private CIMAdapter adapter = new CIMAdapter();
-        private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
+        private bool isNMSPopulated;
 
         private TabItemViewModel selectedView;
-        private bool isNMSPopulated;
+        private CIMAdapter adapter = new CIMAdapter();
+        private ModelResourcesDesc modelResourcesDesc = new ModelResourcesDesc();
 
         public ObservableCollection<TabItemViewModel> Views { get; } = new ObservableCollection<TabItemViewModel>();
 
@@ -27,8 +24,6 @@ namespace MVVM.ViewModels
             Views.Add(new TabItemViewModel("Available GIDs", new AvailableGIDViewModel()));
             IsNMSPopulated = false;
         }
-
-
 
         public TabItemViewModel SelectedTab
         {

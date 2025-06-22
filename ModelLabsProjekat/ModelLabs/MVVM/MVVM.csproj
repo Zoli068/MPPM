@@ -147,9 +147,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\CIMAdapter\CIMAdapter.csproj">
       <Project>{f680d34f-c148-4314-8914-b2df3e7b17af}</Project>

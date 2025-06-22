@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\viewmodels\\getrelatedvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodels\\getrelatedvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\getrelatedvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\getrelatedvaluesview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\homeview.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\viewmodels\\getextentvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\viewmodels\\getextentvaluesviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\getvaluesview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\getvaluesview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|d:\\fakultet\\iv godina\\modeli pod\\projekat\\projekat\\mppm\\modellabsprojekat\\modellabs\\mvvm\\views\\getrelatedvaluesview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{3E139032-FD3C-4D64-AE03-547B8D093826}|MVVM\\MVVM.csproj|solutionrelative:mvvm\\views\\getrelatedvaluesview.xaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,40 +46,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "MVVM\\MainWindow.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\MainWindow.xaml",
+              "RelativeToolTip": "MVVM\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-22T19:07:37.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "HomeView.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\HomeView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\Views\\HomeView.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\HomeView.xaml",
+              "RelativeToolTip": "MVVM\\Views\\HomeView.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-22T19:06:41.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "GetRelatedValuesView.xaml",
               "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetRelatedValuesView.xaml",
               "RelativeDocumentMoniker": "MVVM\\Views\\GetRelatedValuesView.xaml",
               "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetRelatedValuesView.xaml",
               "RelativeToolTip": "MVVM\\Views\\GetRelatedValuesView.xaml",
+              "ViewState": "AQIAADMAAAAAAAAAAAAAAGYAAAAOAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-06-19T17:41:20.576Z",
+              "WhenOpened": "2025-06-22T19:02:13.208Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetExtentValuesViewModel.cs",
-              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
-              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModels\\GetExtentValuesViewModel.cs",
-              "ViewState": "AQIAAKUAAAAAAAAAAAAcwMQAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T17:40:26.503Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetRelatedValuesViewModel.cs",
-              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetRelatedValuesViewModel.cs",
-              "RelativeDocumentMoniker": "MVVM\\ViewModels\\GetRelatedValuesViewModel.cs",
-              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\ViewModels\\GetRelatedValuesViewModel.cs",
-              "RelativeToolTip": "MVVM\\ViewModels\\GetRelatedValuesViewModel.cs",
-              "ViewState": "AQIAAPkAAAAAAAAAAAAAABEBAAA9AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-19T14:43:48.123Z",
+              "Title": "GetValuesView.xaml",
+              "DocumentMoniker": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetValuesView.xaml",
+              "RelativeDocumentMoniker": "MVVM\\Views\\GetValuesView.xaml",
+              "ToolTip": "D:\\Fakultet\\IV godina\\modeli pod\\PROJEKAT\\Projekat\\MPPM\\ModelLabsProjekat\\ModelLabs\\MVVM\\Views\\GetValuesView.xaml",
+              "RelativeToolTip": "MVVM\\Views\\GetValuesView.xaml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAE4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-06-22T19:04:49.92Z",
               "EditorCaption": ""
             }
           ]

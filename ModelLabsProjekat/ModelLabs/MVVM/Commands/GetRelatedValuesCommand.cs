@@ -4,62 +4,40 @@ using MVVM.Helpers;
 using MVVM.ViewModels;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MVVM.Commands
 {
     public class GetRelatedValuesCommand
     {
-
         private ModelResourcesDesc modelResourcesDesc;
-
         private NetworkModelGDAProxy gdaQueryProxy = null;
 
         public GetRelatedValuesCommand(ModelResourcesDesc modelResourcesDesc)
         {
             this.modelResourcesDesc = modelResourcesDesc;
         }
-        public NetworkModelGDAProxy GdaQueryProxy
-        {
-            get
-            {
-                if (gdaQueryProxy != null)
-                {
-                    gdaQueryProxy.Abort();
-                    gdaQueryProxy = null;
-                }
-
-                gdaQueryProxy = new NetworkModelGDAProxy("NetworkModelGDAEndpoint");
-                gdaQueryProxy.Open();
-
-                return gdaQueryProxy;
-            }
-        }
 
         public List<List<Tuple<string, string>>> GetRelatedValues(long source,Association association, List<ModelCode> properties)
         {
+            int resultLeft;
             int iteratorID = 0;
+            List<ResourceDescription> result;
+            List<ResourceDescription> results = new List<ResourceDescription>();
+            List<List<Tuple<string, string>>> sendingBackValue = new List<List<Tuple<string, string>>>();
+
             try
             {
                 iteratorID = GdaQueryProxy.GetRelatedValues(source, properties, association);
-
-                List<ResourceDescription> results = new List<ResourceDescription>();
-
-                int resultLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorID);
+                resultLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorID);
 
                 if (resultLeft == 0) { return new List<List<Tuple<string, string>>>(); }
 
                 while (resultLeft > 0)
                 {
-                    List<ResourceDescription> result = GdaQueryProxy.IteratorNext(500, iteratorID);
+                    result = GdaQueryProxy.IteratorNext(500, iteratorID);
                     results.AddRange(result);
                     resultLeft = GdaQueryProxy.IteratorResourcesLeft(iteratorID);
-                }
-
-
-                List<List<Tuple<string, string>>> sendingBackValue = new List<List<Tuple<string, string>>>();
+                }     
 
                 foreach (ResourceDescription val in results)
                 {
@@ -67,10 +45,9 @@ namespace MVVM.Commands
                     sendingBackValue.Add(ResourceDescriptionToListOfStrings.ConvertToListOfStrings(val));
                 }
 
-
                 return sendingBackValue;
             }
-            catch (Exception ex) { }
+            catch (Exception) { }
 
             return new List<List<Tuple<string, string>>>();
         }
@@ -96,6 +73,23 @@ namespace MVVM.Commands
                 {
                     AvailableGIDViewModel.AvailableGIDs[type].Add(rd.Id.ToString());
                 }
+            }
+        }
+
+        public NetworkModelGDAProxy GdaQueryProxy
+        {
+            get
+            {
+                if (gdaQueryProxy != null)
+                {
+                    gdaQueryProxy.Abort();
+                    gdaQueryProxy = null;
+                }
+
+                gdaQueryProxy = new NetworkModelGDAProxy("NetworkModelGDAEndpoint");
+                gdaQueryProxy.Open();
+
+                return gdaQueryProxy;
             }
         }
     }

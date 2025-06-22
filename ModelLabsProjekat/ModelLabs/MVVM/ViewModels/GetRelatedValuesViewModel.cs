@@ -6,31 +6,32 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace MVVM.ViewModels
 {
     public class GetRelatedValuesViewModel:BindableBase
     {
-        public MyICommand GetRelatedValuesCommand { get; set; } 
-
-        private int selectedResultNumber;
-        private ObservableCollection<int> resultNumbers=new ObservableCollection<int>();
-        private List<DMSType> dmsTypes;
         private DMSType selectedDMSType;
-        private CIMAdapter adapter;
-        private ModelResourcesDesc modelResourcesDesc;
-        private List<List<Tuple<string, string>>> readedComplexValues;
-        private ObservableCollection<Tuple<string, string>> readedValues;
-        private ObservableCollection<string> selectedAttributes = new ObservableCollection<string>();
-        private ObservableCollection<string> attributes = new ObservableCollection<string>();
-        private ObservableCollection<string> selectableRefAttributes=new ObservableCollection<string>();
+        private int selectedResultNumber;
+        private string gidValue = string.Empty;
         private string selectedRefAttribute=string.Empty;
         private string selectedAttributeToAdd = string.Empty;
         private string selectedAttributeToRemove = string.Empty;
-        private string gidValue = string.Empty;
+
+        private List<DMSType> dmsTypes;
+        private List<List<Tuple<string, string>>> readedComplexValues;
+
+        private ObservableCollection<Tuple<string, string>> readedValues;
+        private ObservableCollection<int> resultNumbers=new ObservableCollection<int>();
+        private ObservableCollection<string> attributes = new ObservableCollection<string>();
+        private ObservableCollection<string> selectedAttributes = new ObservableCollection<string>();
+        private ObservableCollection<string> selectableRefAttributes=new ObservableCollection<string>();
+
+        private CIMAdapter adapter;
+        private ModelResourcesDesc modelResourcesDesc;
+
+        public MyICommand GetRelatedValuesCommand { get; set; } 
 
         public GetRelatedValuesViewModel(CIMAdapter adapter, ModelResourcesDesc modelResourcesDesc)
         {
@@ -50,8 +51,10 @@ namespace MVVM.ViewModels
 
         private void getRelatedValues()
         {
-
+            long gid;
+            List<ModelCode> properties;
             Association association = new Association();
+            GetRelatedValuesCommand getRelatedValuesCommand = new GetRelatedValuesCommand(modelResourcesDesc);
 
             if (SelectedRefAttribute == string.Empty)
             {
@@ -59,18 +62,16 @@ namespace MVVM.ViewModels
                 return;
             }
 
-            association.PropertyId = (ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute);
-            association.Type=GetTargetingModelCode.GetTargetingPropertyOwnersModelCode((ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute));
-
-            List<ModelCode> properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
-
             if (selectedAttributes.Count == 0)
             {
                 MessageBox.Show("You must select atleast 1 attribute", "No selected attributes", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
-            long gid;
+            association.PropertyId = (ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute);
+            association.Type=GetTargetingModelCode.GetTargetingPropertyOwnersModelCode((ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute));
+
+            properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
 
             if (long.TryParse(gidValue, out gid))
             {
@@ -85,9 +86,7 @@ namespace MVVM.ViewModels
                 MessageBox.Show("GID must be number", "Invalid GID Value", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
-            
-            GetRelatedValuesCommand getRelatedValuesCommand = new GetRelatedValuesCommand(modelResourcesDesc);
-
+                   
             readedComplexValues=getRelatedValuesCommand.GetRelatedValues(gid,association,properties);
 
             if (readedComplexValues.Count == 0)
@@ -102,16 +101,16 @@ namespace MVVM.ViewModels
             }
 
             SelectedResultNumber = 1;
-
         }
 
         private void getRefAttributes()
         {
-            List<ModelCode> res=modelResourcesDesc.GetPropertyIds(selectedDMSType,PropertyType.Reference);
+            List<ModelCode> res;
+
+            res = modelResourcesDesc.GetPropertyIds(selectedDMSType,PropertyType.Reference);
             res.AddRange(modelResourcesDesc.GetPropertyIds(selectedDMSType, PropertyType.ReferenceVector));
 
             SelectableRefAttributes = new ObservableCollection<string>(res.Select(x => x.ToString()).ToList());
-
 
             if (SelectableRefAttributes.Count > 0)
             {
@@ -128,6 +127,9 @@ namespace MVVM.ViewModels
 
         private void getAttributesForSelectedRef()
         {
+            List<ModelCode> res;
+            ModelCode referencedCode;
+
             if (SelectedRefAttribute == string.Empty || SelectedRefAttribute == null)        
             {
                 SelectedAttributes = new ObservableCollection<string>();
@@ -137,8 +139,8 @@ namespace MVVM.ViewModels
                 return;        
             }
 
-            ModelCode referencedCode = GetTargetingModelCode.GetTargetingPropertyOwnersModelCode((ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute));
-            List<ModelCode> res = modelResourcesDesc.GetAllPropertyIds(referencedCode);
+            referencedCode = GetTargetingModelCode.GetTargetingPropertyOwnersModelCode((ModelCode)Enum.Parse(typeof(ModelCode), SelectedRefAttribute));
+            res = modelResourcesDesc.GetAllPropertyIds(referencedCode);
 
             Attributes= new ObservableCollection<string>(res.Select(x => x.ToString()).ToList());
         }
@@ -147,10 +149,11 @@ namespace MVVM.ViewModels
         {
             SelectedAttributes.Clear();
             SelectableRefAttributes.Clear();
+
+            GIDValue= string.Empty;
             SelectedRefAttribute = string.Empty;
             SelectedAttributeToAdd = string.Empty;
             SelectedAttributeToRemove = string.Empty;
-            GIDValue= string.Empty;
         }
 
 
@@ -169,12 +172,11 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedResultNumber, value);
-                if (readedComplexValues.Count == 0)
-                {
-                    return;
-                }
 
-                ReadedValues = new ObservableCollection<Tuple<string, string>>(readedComplexValues[SelectedResultNumber - 1]);
+                if (readedComplexValues.Count > 0)
+                {
+                    ReadedValues = new ObservableCollection<Tuple<string, string>>(readedComplexValues[SelectedResultNumber - 1]);
+                }
             }
         }
 
@@ -202,14 +204,12 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedAttributeToAdd, value);
-                if (value != null)
+
+                if (value != null && value.Trim() != string.Empty)
                 {
-                    if (value.Trim() != string.Empty)
-                    {
-                        SelectedAttributes.Add(value);
-                        Attributes.Remove(value);
-                        selectedAttributeToAdd = string.Empty;
-                    }
+                    SelectedAttributes.Add(value);
+                    Attributes.Remove(value);
+                    selectedAttributeToAdd = string.Empty;                  
                 }
             }
         }
@@ -220,14 +220,12 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedAttributeToRemove, value);
-                if (value != null)
+
+                if (value != null && value.Trim() != string.Empty)
                 {
-                    if (value.Trim() != string.Empty)
-                    {
-                        SelectedAttributes.Remove(value);
-                        Attributes.Add(value);
-                        selectedAttributeToRemove = string.Empty;
-                    }
+                    SelectedAttributes.Remove(value);
+                    Attributes.Add(value);
+                    selectedAttributeToRemove = string.Empty;
                 }
             }
         }
@@ -255,7 +253,6 @@ namespace MVVM.ViewModels
             get => selectableRefAttributes;
             set
             {
-
                 SetProperty(ref selectableRefAttributes, value);
             }
         }
@@ -266,13 +263,14 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedRefAttribute, value);
-                if(value!= string.Empty)
+
+                if(value != null && value.Trim() != string.Empty)
                 {
-                    SelectedAttributes = new ObservableCollection<string>();
-                    Attributes = new ObservableCollection<string>();
                     SelectedAttributeToAdd = string.Empty;
                     SelectedAttributeToRemove = string.Empty;
                     ResultNumbers = new ObservableCollection<int>();
+                    Attributes = new ObservableCollection<string>();
+                    SelectedAttributes = new ObservableCollection<string>();
                     ReadedValues = new ObservableCollection<Tuple<string, string>>();
                     getAttributesForSelectedRef();
                 }
@@ -294,6 +292,7 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedDMSType, value);
+
                 resetSelectedValues();
                 getRefAttributes();
                 ResultNumbers = new ObservableCollection<int>();

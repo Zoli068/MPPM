@@ -1,37 +1,38 @@
 ﻿using FTN.Common;
 using FTN.ESI.SIMES.CIM.CIMAdapter;
-using FTN.ServiceContracts;
 using MVVM.Commands;
 using MVVM.Helpers;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace MVVM.ViewModels
 {
     class GetValuesViewModel : BindableBase
     {
-        public MyICommand GetValuesCommand { get; set; }
-
-        private ObservableCollection<Tuple<string, string>> readedValues;
         private string gidValue;
-        private CIMAdapter adapter;
-        private List<DMSType> dmsTypes;
+        private DMSType selectedDMSType;
         private string selectedAttributeToAdd;
         private string selectedAttributeToRemove;
-        private ObservableCollection<string> selectedAttributes =new ObservableCollection<string>();
-        private DMSType selectedDMSType;
+
+        private List<DMSType> dmsTypes;
+
         private ObservableCollection<string> attributes;
+        private ObservableCollection<Tuple<string, string>> readedValues;
+        private ObservableCollection<string> selectedAttributes =new ObservableCollection<string>();
+        private CIMAdapter adapter;
+        
         private ModelResourcesDesc modelResourcesDesc;
+
+        public MyICommand GetValuesCommand { get; set; }
 
         public GetValuesViewModel(CIMAdapter adapter, ModelResourcesDesc modelResourcesDesc)
         {
             this.adapter = adapter;
             this.modelResourcesDesc = modelResourcesDesc;
+
             GetValuesCommand = new MyICommand(getValues);
 
             DMSTypes = modelResourcesDesc.AllDMSTypes.ToList();   
@@ -46,7 +47,9 @@ namespace MVVM.ViewModels
         private void getValues()
         {
             long gid=0;
-            
+            List<ModelCode> properties;
+            GetValuesCommand gvc = new GetValuesCommand(modelResourcesDesc);
+
             if (selectedAttributes.Count == 0)
             {
                 MessageBox.Show("You must select atleast 1 attribute", "No selected attributes", MessageBoxButton.OK, MessageBoxImage.Warning);
@@ -67,10 +70,7 @@ namespace MVVM.ViewModels
                 return;
             }
 
-            List<ModelCode> properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
-
-
-            GetValuesCommand gvc = new GetValuesCommand(modelResourcesDesc);
+            properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
 
             ReadedValues=new ObservableCollection<Tuple<string,string>>(gvc.GetValues(gid, properties));
 
@@ -79,7 +79,6 @@ namespace MVVM.ViewModels
                 MessageBox.Show("With the selected options there, NMS sent back no result", "No readed value", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
-
 
         private void updateAttributes()
         {
@@ -104,13 +103,10 @@ namespace MVVM.ViewModels
             get => selectedAttributeToRemove;
             set
             {
-                if (value != null)
+                if (value != null && value != string.Empty)
                 {
-                    if(value!=string.Empty)
-                    {
-                        SelectedAttributes.Remove(value);
-                        Attributes.Add(value);
-                    }
+                    SelectedAttributes.Remove(value);
+                    Attributes.Add(value);
                 }
             }
         }
@@ -120,13 +116,11 @@ namespace MVVM.ViewModels
             get => selectedAttributeToAdd;
             set
             {
-                if (value != null)
+                if (value != null && value != string.Empty)
                 {
-                    if (value != string.Empty)
-                    {
-                        Attributes.Remove(value);
-                        SelectedAttributes.Add(value);
-                    }
+
+                    Attributes.Remove(value);
+                    SelectedAttributes.Add(value);
                 }
             }
         }
@@ -173,13 +167,11 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref selectedDMSType, value);
+
                 updateAttributes();
-                ReadedValues = new ObservableCollection<Tuple<string, string>>();
                 GIDValue = string.Empty;
+                ReadedValues = new ObservableCollection<Tuple<string, string>>();
             }
         }
-
-
-
     }
 }

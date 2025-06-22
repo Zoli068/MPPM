@@ -1,9 +1,9 @@
 ﻿<UserControl x:Class="MVVM.Views.GetRelatedValues"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008">
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
     <Grid>
+
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
@@ -12,6 +12,7 @@
             <RowDefinition Height="2*"/>
             <RowDefinition Height="2*"/>
         </Grid.RowDefinitions>
+
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
@@ -19,56 +20,84 @@
         </Grid.ColumnDefinitions>
 
         <StackPanel Grid.Row="0" Margin="0 5 0 0">
+
             <TextBlock HorizontalAlignment="Center" FontSize="25">Select the DMS type</TextBlock>
-            <ComboBox  Margin="0 5 0 0"   HorizontalAlignment="Center" FontSize="20" ItemsSource="{Binding DMSTypes}" SelectedItem="{Binding SelectedDMSType}"></ComboBox>
+
+            <ComboBox  Margin="0 5 0 0"   HorizontalAlignment="Center" FontSize="20" ItemsSource="{Binding DMSTypes}" SelectedItem="{Binding SelectedDMSType}"/>
+
         </StackPanel>
 
         <StackPanel Grid.Row="1" Margin="25 5 25 0">
+
             <TextBlock HorizontalAlignment="Center" Margin="0 0 0 5"  FontSize="25">Select the reference</TextBlock>
-            <ComboBox  Margin="0 0 0 20"   HorizontalAlignment="Center" FontSize="20" ItemsSource="{Binding SelectableRefAttributes}" SelectedItem="{Binding SelectedRefAttribute}"></ComboBox>
+
+            <ComboBox  Margin="0 0 0 20"   HorizontalAlignment="Center" FontSize="20" ItemsSource="{Binding SelectableRefAttributes}" SelectedItem="{Binding SelectedRefAttribute}"/>
+
         </StackPanel>
 
         <StackPanel Grid.Row="2" Margin="25 0 25 0">
-            <TextBlock HorizontalAlignment="Center" Margin="0 0 0 0"  FontSize="25">Select the attributes</TextBlock>
-            <ListBox  VerticalAlignment="Stretch" MinHeight="80" MaxHeight="80" SelectionMode="Single"  ItemsSource="{Binding Attributes}" SelectedItem="{Binding SelectedAttributeToAdd}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto" />
-        </StackPanel>
 
+            <TextBlock HorizontalAlignment="Center" Margin="0 0 0 0"  FontSize="25">Select the attributes</TextBlock>
+
+            <ListBox  VerticalAlignment="Stretch" MinHeight="80" MaxHeight="80" SelectionMode="Single"  ItemsSource="{Binding Attributes}" 
+                      SelectedItem="{Binding SelectedAttributeToAdd}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+
+        </StackPanel>
 
         <StackPanel Grid.Row="3" Margin="25 0 25 0">
+
             <TextBlock HorizontalAlignment="Center" Margin="0 0 0 0"  FontSize="25">Selected attrbiutes</TextBlock>
-            <ListBox  VerticalAlignment="Stretch" MinHeight="80" MaxHeight="80" SelectionMode="Single"  ItemsSource="{Binding SelectedAttributes}" SelectedItem="{Binding SelectedAttributeToRemove}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto" />
+
+            <ListBox  VerticalAlignment="Stretch" MinHeight="80" MaxHeight="80" SelectionMode="Single"  ItemsSource="{Binding SelectedAttributes}" 
+                      SelectedItem="{Binding SelectedAttributeToRemove}" ScrollViewer.CanContentScroll="True"  ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+
         </StackPanel>
-        
+
         <StackPanel Grid.Row="4" Margin="0 0 0 0">
+
             <TextBlock HorizontalAlignment="Center" Margin="0 2 0 10" FontSize="25">Enter the GID</TextBlock>
-            <TextBox  Margin="25 0 25 0" TextAlignment="Center" Text="{Binding GIDValue}"   HorizontalAlignment="Stretch" FontSize="20" ></TextBox>
+
+            <TextBox  Margin="25 0 25 0" TextAlignment="Center" Text="{Binding GIDValue}" HorizontalAlignment="Stretch" FontSize="20"></TextBox>
+
         </StackPanel>
 
-
-        <Button Grid.Row="5" Margin="25 5 25 5" FontSize="25" Command="{Binding GetRelatedValuesCommand}" >Get Values</Button>
+        <Button Grid.Row="5" Margin="25 5 25 5" FontSize="25" Command="{Binding GetRelatedValuesCommand}">Get Values</Button>
 
         <TextBlock Grid.Row="0" Margin="0 00 0 0" Grid.ColumnSpan="2" Grid.Column="1" HorizontalAlignment="Center" FontSize="30">Readed values</TextBlock>
-        <ComboBox  Margin="0 45 0 0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" FontSize="20" ItemsSource="{Binding ResultNumbers}" SelectedItem="{Binding SelectedResultNumber}" MaxHeight="30" MinWidth="70"></ComboBox>
+
+        <ComboBox  Margin="0 45 0 0" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2"  HorizontalAlignment="Center" FontSize="20" 
+                   ItemsSource="{Binding ResultNumbers}" SelectedItem="{Binding SelectedResultNumber}" MaxHeight="30" MinWidth="70"/>
+
         <TextBlock Grid.Row="0" Margin="0 85 0 0"  Grid.Column="1" HorizontalAlignment="Center" FontSize="25">Attribute name</TextBlock>
+
         <TextBlock Grid.Row="0" Margin="0 85 0 0"  Grid.Column="2" HorizontalAlignment="Center" FontSize="25">Attribute Value</TextBlock>
 
         <ListBox ScrollViewer.VerticalScrollBarVisibility="Hidden" Grid.Row="1" Grid.RowSpan="5" Grid.Column="1" Grid.ColumnSpan="2" ItemsSource="{Binding ReadedValues}" Margin="10">
             <ListBox.ItemTemplate>
                 <DataTemplate>
+
                     <Border BorderThickness="1" BorderBrush="Black">
 
                         <Grid Margin="6">
+
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="325" />
                                 <ColumnDefinition Width="325" />
                             </Grid.ColumnDefinitions>
 
-                            <TextBlock  TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="0" Margin="-15 0 0 0" FontSize="15" Text="{Binding Item1}" FontWeight="Bold"  HorizontalAlignment="Center"/>
-                            <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="1"  Margin="30 0 0 0" FontSize="15" Text="{Binding Item2}"  HorizontalAlignment="Center"/>
+                            <TextBlock  TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="0" Margin="-15 0 0 0" FontSize="15" 
+                                        Text="{Binding Item1}" FontWeight="Bold"  HorizontalAlignment="Center"/>
+
+                            <TextBlock TextWrapping="Wrap" TextAlignment="Center" VerticalAlignment="Center"  Grid.Column="1"  Margin="30 0 0 0" FontSize="15" 
+                                       Text="{Binding Item2}"  HorizontalAlignment="Center"/>
+
                         </Grid>
                     </Border>
+
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
+
     </Grid>
+
 </UserControl>

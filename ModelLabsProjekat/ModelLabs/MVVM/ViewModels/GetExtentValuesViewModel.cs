@@ -6,33 +6,35 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 
 namespace MVVM.ViewModels
 {
     public class GetExtentValuesViewModel:BindableBase
     {
-        public MyICommand GetExtentValuesCommand { get; set; }
-
-        private List<List<Tuple<string, string>>> readedComplexValues;
-        private ObservableCollection<Tuple<string, string>> readedValues;
-        private int selectedResultNumber;
-        private ObservableCollection<int> selectedResultNumbers=new ObservableCollection<int>();
-        private List<DMSType> dmsTypes;
         private DMSType selectedDMSType;
+        private int selectedResultNumber;
         private string selectedAttributeToAdd;
         private string selectedAttributeToRemove;
-        private ObservableCollection<string> selectedAttributes = new ObservableCollection<string>();
+
+        private List<DMSType> dmsTypes;
+        private List<List<Tuple<string, string>>> readedComplexValues;
+
+        private ObservableCollection<Tuple<string, string>> readedValues;
         private ObservableCollection<string> attributes =new ObservableCollection<string>();
+        private ObservableCollection<int> selectedResultNumbers=new ObservableCollection<int>();
+        private ObservableCollection<string> selectedAttributes = new ObservableCollection<string>();
+
         private CIMAdapter adapter;
         private ModelResourcesDesc modelResourcesDesc;
+
+        public MyICommand GetExtentValuesCommand { get; set; }
 
         public GetExtentValuesViewModel(CIMAdapter adapter, ModelResourcesDesc modelResourcesDesc)
         {
             this.adapter = adapter;
             this.modelResourcesDesc = modelResourcesDesc;
+
             GetExtentValuesCommand = new MyICommand(getExentValues);
 
             DMSTypes = modelResourcesDesc.AllDMSTypes.ToList();
@@ -40,14 +42,17 @@ namespace MVVM.ViewModels
 
             if (DMSTypes.Count > 0)
             {
-                SelectedDMSType = DMSTypes[1];
+                SelectedDMSType = DMSTypes[0];
             }
         }
 
         private void getExentValues()
         {
-            List<ModelCode> properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
-
+            List<ModelCode> properties;
+            SelectedResultNumbers = new ObservableCollection<int>();
+            GetExtentValuesCommand gvc = new GetExtentValuesCommand(modelResourcesDesc);
+            
+            properties = new List<ModelCode>(SelectedAttributes.Select(x => (ModelCode)Enum.Parse(typeof(ModelCode), x)).ToList());
 
             if (selectedAttributes.Count == 0)
             {
@@ -55,16 +60,11 @@ namespace MVVM.ViewModels
                 return;
             }
 
-            SelectedResultNumbers = new ObservableCollection<int>();
-
-            GetExtentValuesCommand gvc = new GetExtentValuesCommand(modelResourcesDesc);
-
             readedComplexValues = gvc.GetExtentValues(selectedDMSType, properties);
-
 
             if (readedComplexValues.Count == 0)
             {
-               MessageBox.Show("With the selected options there, NMS sent back no result", "No readed value", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("With the selected options there, NMS sent back no result", "No readed value", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -72,18 +72,16 @@ namespace MVVM.ViewModels
             {
                 SelectedResultNumbers.Add(i);
             }
-                SelectedResultNumber = 1;
 
-
+            SelectedResultNumber = 1;
         }
-
 
         private void updateAttributes()
         {
             if (SelectedDMSType != 0)
             {
-                Attributes = new ObservableCollection<string>(modelResourcesDesc.GetAllPropertyIds(SelectedDMSType).Select((x) => x.ToString()).ToList());
                 SelectedAttributes = new ObservableCollection<string>();
+                Attributes = new ObservableCollection<string>(modelResourcesDesc.GetAllPropertyIds(SelectedDMSType).Select((x) => x.ToString()).ToList());
             }
         }
 
@@ -102,12 +100,11 @@ namespace MVVM.ViewModels
             set
             {
                 SetProperty(ref  selectedResultNumber, value);
-                if (readedComplexValues.Count == 0)
-                {
-                    return;
-                }
 
-                ReadedValues = new ObservableCollection<Tuple<string, string>>(readedComplexValues[SelectedResultNumber-1]);
+                if (readedComplexValues.Count > 0)
+                {
+                    ReadedValues = new ObservableCollection<Tuple<string, string>>(readedComplexValues[SelectedResultNumber - 1]);
+                }  
             }
         }
 
@@ -120,20 +117,16 @@ namespace MVVM.ViewModels
             }
         }
 
-
         public string SelectedAttributeToRemove
         {
             get => selectedAttributeToRemove;
             set
             {
-                if (value != null)
+                if (value != null && value != string.Empty)
                 {
-                    if (value != string.Empty)
-                    {
-                        SelectedAttributes.Remove(value);
-                        Attributes.Add(value);
-                        selectedAttributeToRemove = string.Empty;
-                    }
+                    SelectedAttributes.Remove(value);
+                    Attributes.Add(value);
+                    selectedAttributeToRemove = string.Empty;
                 }
             }
         }
@@ -143,15 +136,12 @@ namespace MVVM.ViewModels
             get => selectedAttributeToAdd;
             set
             {
-                if (value != null)
+                if (value != null && value != string.Empty)
                 {
-                    if (value != string.Empty)
-                    {
-                        Attributes.Remove(value);
-                        SelectedAttributes.Add(value);
-                        selectedAttributeToAdd = string.Empty;
-                    }
-                }
+                    Attributes.Remove(value);
+                    SelectedAttributes.Add(value);
+                    selectedAttributeToAdd = string.Empty;
+                }             
             }
         }
 
@@ -181,8 +171,6 @@ namespace MVVM.ViewModels
                 SetProperty(ref attributes, value);
             }
         }
-
-
 
         public DMSType SelectedDMSType
         {
