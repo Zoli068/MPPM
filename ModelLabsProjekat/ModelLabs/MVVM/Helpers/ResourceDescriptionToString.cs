@@ -25,7 +25,15 @@ namespace MVVM.Helpers
                     {
                         if((0x00000000000000ff & (long)prop.Id) == 0x09)
                         {
-                             response.Add(new Tuple<string,string>(prop.Id.ToString(),prop.AsReference().ToString()));               
+                             string refer= prop.AsReference().ToString();
+                             if(refer != null)
+                             {
+                                if (refer.Trim() == "0")
+                                {
+                                    refer = "";
+                                }
+                             }
+                             response.Add(new Tuple<string,string>(prop.Id.ToString(),refer));               
 
                         }
                         else
@@ -39,7 +47,10 @@ namespace MVVM.Helpers
                                 foreach(long val in references)
                                 {
                                     num++;
-                                    res += val.ToString()+"   ";
+                                    if (res.Trim() != "0")
+                                    {
+                                        res += val.ToString()+"   ";
+                                    }
                                 }
 
                                 response.Add(new Tuple<string, string>(prop.Id.ToString(), res));
